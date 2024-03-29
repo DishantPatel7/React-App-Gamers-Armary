@@ -1,0 +1,31 @@
+#container7 {
+    background: rgb(127, 90, 207);
+    background: linear-gradient(
+      54deg,
+      rgba(127, 90, 207, 0.9893207282913166) 0%,
+      rgba(129, 76, 216, 0.9669117647058824) 39%,
+      rgba(142, 43, 202, 0.9641106442577031) 100%
+    );
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  #container7 img {
+    width: 70%;
+    height: 100%;
+    top: -15vh;
+    position: absolute;
+    /* animation: copy 2s linear 1;
+    transform: translateY(100px);
+    opacity: 0; */
+  }
+  @keyframes copy {
+    to {
+      transform: translateY(10px);
+      opacity: 100%;
+      animation-play-state: running;
+    }
+  }
+  

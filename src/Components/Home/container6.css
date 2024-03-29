@@ -1,0 +1,65 @@
+#container6 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#container6 #fix-downside-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../Images/bg-1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+#container6 #cont6-upside1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+#container6 #cont6-upside1 #cont6-upside-tx {
+  color: white;
+  text-align: center;
+}
+#container6 #cont6-upside1 #cont6-upside-tx h1 {
+  font-size: 2.5vw;
+  letter-spacing: 1px;
+  padding: 1.5vw 0;
+}
+#container6 #cont6-upside1 #cont6-upside-tx p {
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+}
+#cont6-upside-input {
+  margin-top: 5vh;
+  /* background-color: red; */
+}
+#cont6-upside-input p {
+  font-size: 1.2vw;
+  padding: 0.3vw;
+}
+#cont6-upside-input .inquiry {
+  display: block;
+  border: 2px solid white;
+  border-radius: 1vw;
+  margin: 0 10%;
+}
+#cont6-upside-input .inquiry input {
+  border-start-start-radius: 1vw;
+  border-start-end-radius: 1vw;
+  background-color: transparent;
+  padding: 1vw;
+  width: 100%;
+  border: none;
+}
+#cont6-upside-input .inquiry button {
+  background-color: white;
+  padding: 1vw;
+  width: 100%;
+  border: none;
+  border-end-start-radius: 0.8vw;
+  border-end-end-radius: 0.8vw;
+}

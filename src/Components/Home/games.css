@@ -1,0 +1,71 @@
+#games-div {
+  width: 100%;
+  background-color: #121314;
+  padding: 2% 5%;
+  /* margin-top: -10vh; */
+}
+#games-div h1 {
+  color: white;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: 400;
+}
+#games-div .btn-switch {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.75em;
+}
+#games-div .btn-switch div:nth-child(1) {
+  padding: 0.35em 0.5em;
+  border-radius: 1.8em;
+  background-color: #343739;
+}
+#games-div .btn-switch div:nth-child(1) button {
+  padding: 1em;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+#games-div .btn-switch div:nth-child(1) button:nth-child(2) {
+  background-color: transparent;
+  color: white;
+}
+#games-div .btn-switch div:nth-child(1) button:nth-child(2):hover {
+  color: rgb(170, 45, 227);
+}
+#games-div .games {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1vw 0;
+  /* gap: 0.5vw; */
+}
+#games-div  .gs1 {
+  margin: 2.5vw 0;
+  width: 13em;
+  height: 14em;
+  /* width: 14vw;
+  height: 30vh; */
+}
+#games-div .gs1 img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+  filter: brightness(70%);
+}
+#games-div .gs1 img:hover {
+  filter: brightness(110%);
+  transform: scale(1.03);
+}
+#games-div .gs1 p {
+  color: white;
+  font-weight: 350;
+  font-size: 0.85em;
+}

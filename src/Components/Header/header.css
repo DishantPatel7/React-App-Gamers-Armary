@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  max-width:90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  margin-top: 2vh;
+  background-color: transparent;
+  position: relative;
+  z-index: 100;
+  justify-content: space-between;
+
+  background: rgba(143, 61, 215, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+header div:nth-child(1) img {
+  height: 7vh;
+}
+header div:nth-child(1) a:nth-child(1) {
+  /* font-family: "Rubik Doodle Shadow", system-ui; */
+  font-family: trail1;
+  font-size: 2.5vw;
+  /* color: #f1683a; */
+}
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1vw;
+  font-size: 1vw;
+  position: relative;
+}
+header a:nth-child(1)::after,
+header a:nth-child(2)::after,
+header a:nth-child(3)::after,
+header a:nth-child(4)::after,
+header a:nth-child(5)::after
+ {
+  margin-top: 1.7vw;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #B00000;
+  transition: all ease 1s;
+}
+header a:nth-child(1):hover::after,
+header a:nth-child(2):hover::after,
+header a:nth-child(3):hover::after,
+header a:nth-child(4):hover::after,
+header a:nth-child(5):hover::after
+ {
+  width: 100%;
+}
