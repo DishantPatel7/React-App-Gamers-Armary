@@ -13,6 +13,7 @@ function App() {
       <Games />
       {/* <Productpage /> */}
       <Foot />
+      <Foot />
     </>
   );
 }
