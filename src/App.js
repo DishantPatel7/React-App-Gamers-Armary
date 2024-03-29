@@ -10,8 +10,8 @@ function App() {
     <>
       <Head />
       {/* <Homeconts /> */}
-      {/* <Productpage /> */}
       <Games />
+      {/* <Productpage /> */}
       <Foot />
     </>
   );
