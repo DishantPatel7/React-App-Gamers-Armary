@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Head />
-      <Homeconts />
-      {/* <Productpage /> */}
+      {/* <Homeconts /> */}
+      <Productpage />
       <Foot />
     </>
   );

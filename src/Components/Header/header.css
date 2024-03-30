@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  max-width:90%;
+  max-width: 85%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -39,26 +39,24 @@ header a {
   font-size: 1vw;
   position: relative;
 }
-header a:nth-child(1)::after,
-header a:nth-child(2)::after,
-header a:nth-child(3)::after,
-header a:nth-child(4)::after,
-header a:nth-child(5)::after
- {
+header div:nth-child(2) a:nth-child(1)::after,
+header div:nth-child(2) a:nth-child(2)::after,
+header div:nth-child(2) a:nth-child(3)::after,
+header div:nth-child(2) a:nth-child(4)::after,
+header div:nth-child(2) a:nth-child(5)::after {
   margin-top: 1.7vw;
   content: "";
   position: absolute;
   left: 0;
   height: 3px;
   width: 0%;
-  background-color: #B00000;
+  background-color: #b00000;
   transition: all ease 1s;
 }
-header a:nth-child(1):hover::after,
-header a:nth-child(2):hover::after,
-header a:nth-child(3):hover::after,
-header a:nth-child(4):hover::after,
-header a:nth-child(5):hover::after
- {
+header div:nth-child(2) a:nth-child(1):hover::after,
+header div:nth-child(2) a:nth-child(2):hover::after,
+header div:nth-child(2) a:nth-child(3):hover::after,
+header div:nth-child(2) a:nth-child(4):hover::after,
+header div:nth-child(2) a:nth-child(5):hover::after {
   width: 100%;
 }

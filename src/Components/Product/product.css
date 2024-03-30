@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+#product {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.04vw;
+  /* overflow:hidden ; */
+  margin-top: -10vh;
+}
+#pro1 {
+  height: 100vh;
+  position: relative;
+  inset: 0 0 0 0;
+  display: flex;
+  background-position: center;
+  background-image: linear-gradient(to top, #6a0101, #6a01017e, #6a010100),
+    url(../Images/Slider/s1.jpeg);
+  background-size: cover;
+}
+#p-content {
+  /* display: none; */
+  display: flex;
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  max-width: 85%;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0 5px 10px #0004;
+  /* background-color: blue; */
+}
+#p-content-L {
+  width: 50%;
+  /* background-color: rgb(25, 93, 138); */
+  padding-left: 1.2em;
+}
+#p-content-L h1 {
+  font-size: 3vw;
+  font-weight: 450;
+}
+#p-content-L-p1,
+#p-content-L-p2 {
+  font-size: 1.1vw;
+  line-height: 2em;
+}
+
+#p-content-L h2 {
+  padding-top: 1.4vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+#p-content-L h2 span {
+  font-size: 0.75em;
+  text-decoration: line-through;
+}
+#p-content-L-p3 {
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+#p-content-L-p3 span {
+  color: gray;
+  font-weight: 600;
+}
+#p-content-L-btn button {
+  margin: 1.3vw 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+#p-content-L-btn button:nth-child(1) {
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 0.7vw 4.5vw;
+  border-radius: 2vw;
+  background-color: orangered;
+}
+#p-content-L-btn button:nth-child(1):hover {
+  background-color: rgba(215, 57, 0, 0.826);
+}
+#p-content-L-btn button:nth-child(2) {
+  font-size: 1.5vw;
+  padding: 0.5vw 0.6vw;
+  border-radius: 50%;
+  margin-left: 0.5vw;
+  background: rgba(128, 128, 128, 0.329);
+}
+#p-content-L-btn button:nth-child(2):hover {
+  background: rgba(128, 128, 128, 0.84);
+}
+#p-content-L h3 {
+  padding-top: 1vw;
+  font-size: 1.05vw;
+}
+#p-content-L-divP {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5vw;
+}
+#p-content-L-divP div {
+  width: 47%;
+}
+#p-content-L-divP div p {
+  line-height: 1.7vw;
+}
+#p-content-R {
+  width: 50%;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+}
+#p-content-R_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* background-color: blue; */
+  bottom: 0;
+  gap: 1vw;
+}
+#p-content-R_L {
+  height: 4.5vw;
+}
+#p-content-R_L img {
+  height: 100%;
+}
+#p-content-R_R p {
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+#p-content-R_R hr {
+  width: 120%;
+  margin: 0.45vw 0;
+}
+#pro2 {
+  /* height: 100vh; */
+  background-color: #6a0101;
+  display: flex;
+  justify-content: center;
+}
+#pro2-content {
+  max-width: 85%;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0 5px 10px #0004;
+  /* background-color: black; */
+}
+#pro2 h1 {
+  padding: 5% 20% 0 20%;
+  text-align: center;
+  color: white;
+  font-weight: 350;
+  font-size: 2.2vw;
+}
+#pro2 .edition-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#pro2 .edition {
+  margin-top: 2%;
+  background: #211f23;
+  width: 32%;
+}
+#pro2 .edition-img img {
+  width: 100%;
+  object-fit: cover;
+}
+#pro2 .edition-tx {
+  padding: 1.5vw 2vw;
+}
+#pro2 .edition-tx .edition-tx-p1 {
+  text-align: center;
+  font-size: 1.25vw;
+}
+#pro2 .edition-tx .edition-tx-p2 {
+  text-align: center;
+  font-size: 0.8vw;
+  margin-top: 0.8vw;
+}
+#pro2 .edition-tx .edition-tx-p2 span {
+  border: 1px solid white;
+  padding: 0.1vw 0.3vw;
+}
+
+#pro2 .edition-des ul {
+  padding: 1vw;
+  font-size: 0.95vw;
+}
+#pro2 .edition-price {
+}
+#pro2 .edition-price .edition-p1 {
+  font-size: 1.6vw;
+  font-weight: 350;
+}
+#pro2 .edition-price .edition-p1 span {
+  font-size: 1.1vw;
+  text-decoration: line-through;
+}
+#pro2 .edition-p2 {
+  padding-top: 0.1vw;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+#pro2 .edition-p2 span {
+  color: gray;
+}
+#pro2 .edition-btn {
+}
+#pro2 .edition-btn button {
+  margin: 1.3vw 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+#pro2 .edition-btn button:nth-child(1) {
+  width: 19vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 0.7vw 4.5vw;
+  border-radius: 2vw;
+  background-color: orangered;
+}
+#pro2 .edition-btn button:nth-child(1):hover {
+  background-color: rgba(215, 57, 0, 0.826);
+}
+#pro2 .edition-btn button:nth-child(2) {
+  font-size: 1.5vw;
+  padding: 0.5vw 0.6vw;
+  border-radius: 50%;
+  margin-left: 0.5vw;
+  background: rgba(128, 128, 128, 0.329);
+}
+#pro2 .edition-btn button:nth-child(2):hover {
+  background: rgba(128, 128, 128, 0.84);
+}
+#pro3 {
+  height: 100vh;
+  background-position: center;
+  background-image: linear-gradient(to bottom, #6a0101, #6a01017e, #6a010100),
+    url(../Images/COD/bg-5.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+}
+
+#pro3-content {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 85%;
+}
+#pro3-content-L {
+  width: 50%;
+}
+#pro3-content-L p {
+  font-size: 0.95vw;
+  color: gray;
+}
+#pro3-content-L h1 {
+  font-size: 2.4vw;
+  font-weight: 400;
+  color: white;
+}
+#pro3-content-R {
+  width: 50%;
+  padding-top: 1.5vw;
+}
+#pro3-content-R p {
+  padding-top: 1vw;
+  text-align: justify;
+  line-height: 1.5vw;
+  color: rgb(208, 208, 208);
+}
+#pro4 {
+  /* height: 100vh; */
+  background: #211f23;
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+  /* padding-left: 5%; */
+}
+
+#pro4-content {
+  display: flex;
+  width: 100%;
+  max-width: 85%;
+  /* background-color: gray; */
+  padding: 0 15%;
+  color: white;
+  font-size: 1.05vw;
+}
+#pro4-content-L {
+  /* background-color: #6a0101/; */
+  width: 50%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 12vw);
+  grid-template-rows: 2em;
+}
+#pro4-content-L p {
+  /* padding: .5vw 0; */
+}
+#pro4-content-R {
+  width: 50%;
+  /* background-color: brown; */
+}
+#pro4-content-R p {
+  padding-bottom: 0.9vw;
+  text-align: justify;
+}
+#pro5 {
+  display: flex;
+  justify-content: center;
+  background: #211f23;
+}
+#pro5-content {
+  width: 100%;
+  max-width: 85%;
+  /* background-color: rgb(245, 172, 172); */
+  color: white;
+  font-size: 1.05vw;
+  text-align: center;
+  padding: 4% 0;
+}
+#pro5-content p {
+  padding: 0.9vw 0;
+}
