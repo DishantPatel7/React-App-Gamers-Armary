@@ -17,7 +17,7 @@
 .carousel .list .item .content {
   position: absolute;
   width: 100%;
-  max-width: 80%;
+  max-width: 85%;
   top: 18%;
   left: 50%;
   transform: translateX(-50%);
@@ -266,7 +266,7 @@
     width: 0;
   }
 }
-@media screen and (max-width: 678px) {
+/* @media screen and (max-width: 678px) {
   header {
     height: 6vh;
   }
@@ -308,4 +308,4 @@
     height: 10vw;
     font-size: large;
   }
-}
+} */

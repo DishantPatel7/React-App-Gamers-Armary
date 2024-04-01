@@ -1,3 +1,6 @@
+#header {
+  padding-top: 2vh;
+}
 header {
   width: 100%;
   max-width: 85%;
@@ -5,7 +8,7 @@ header {
   display: flex;
   align-items: center;
   height: 8vh;
-  margin-top: 2vh;
+  /* margin-top: 2vh; */
   background-color: transparent;
   position: relative;
   z-index: 100;
@@ -16,7 +19,9 @@ header {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  font-family: "Poppins", sans-serif;
 }
 header div:nth-child(1) {
   display: flex;

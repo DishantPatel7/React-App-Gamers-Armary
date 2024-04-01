@@ -1,21 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: Poppins;
-}
 .main {
+  font-family: Poppins;
   background-color: black;
   height: 100vh;
+  margin-top: -10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .card {
@@ -23,6 +14,7 @@ body {
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 22px;
   transition: all 0.3s;
+  margin-top: 10vh;
 }
 
 .card2 {
@@ -114,7 +106,7 @@ body {
 }
 .button2 {
   width: 80%;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -153,12 +145,12 @@ body {
 .social-icons {
   display: flex;
   justify-content: center;
-  padding: .3em 0;
+  padding: 0.3em 0;
 }
 
 .social-icons .icon {
   border-radius: 0.125rem;
-  padding: .75rem;
+  padding: 0.75rem;
   border: none;
   background-color: transparent;
   margin-left: 8px;

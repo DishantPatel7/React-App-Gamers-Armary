@@ -168,6 +168,7 @@
 }
 #pro2 .edition-img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 #pro2 .edition-tx {
@@ -192,6 +193,7 @@
   font-size: 0.95vw;
 }
 #pro2 .edition-price {
+  /* background-color: beige; */
 }
 #pro2 .edition-price .edition-p1 {
   font-size: 1.6vw;

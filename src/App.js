@@ -1,17 +1,15 @@
-import "./App.css";
-import Foot from "./Components/Footer/footer";
-import Head from "./Components/Header/header";
-import Games from "./Components/Home/games";
+import Gamelandpage from "./Pages/gameLandingPage";
+import Gamepage from "./Pages/gamesPage";
 import Homeconts from "./Pages/home";
-import Productpage from "./Pages/productapage";
-
+import Loginpage from "./Pages/loginpage";
 function App() {
   return (
     <>
-      <Head />
       {/* <Homeconts /> */}
-      <Productpage />
-      <Foot />
+      {/* <Gamelandpage /> */}
+      {/* <Gamepage/> */}
+
+      <Loginpage />
     </>
   );
 }

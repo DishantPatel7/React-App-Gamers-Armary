@@ -2,6 +2,9 @@
   width: 100%;
   background-color: #060506;
   padding: 3% 5% 2% 5%;
+  /* padding: 5% 7.5%; */
+  
+  font-family: "Poppins", sans-serif;
 }
 
 #cont8-upside {
@@ -91,8 +94,11 @@ footer {
   align-items: center;
   background-color: rgb(85, 85, 85);
   height: 2.5em;
+  
+  font-family: "Poppins", sans-serif;
 }
 footer p {
   color: white;
+  font-size: 1.1vw;
   /* padding-bottom: 10px; */
 }

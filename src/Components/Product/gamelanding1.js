@@ -1,10 +1,10 @@
-import "./product.css";
+import "./gamelanding.css";
 import iarc_18 from "../Images/iarc_18.webp";
 import c1 from "../Images/COD/c1.avif";
 import c2 from "../Images/COD/c2.avif";
 import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
-function Product() {
+function Gamelanding() {
   return (
     <>
       <div id="product">
@@ -61,7 +61,7 @@ function Product() {
             </div>
           </div>
         </div>
-        <div id="pro2">
+        <div id="pro2">2
           <div id="pro2-content">
             <h1>
               Buy Call of Duty: Modern Warfare III on Gamer's Armary Store
@@ -292,4 +292,4 @@ function Product() {
     </>
   );
 }
-export default Product;
+export default Gamelanding;

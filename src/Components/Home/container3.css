@@ -1,5 +1,6 @@
 #container3 {
   width: 100%;
+  /* position: relative; */
 }
 #cont3-bgimg{
   position: absolute;
@@ -10,7 +11,7 @@
   z-index: -1;
 }
 #cont3-data{
-  padding: 5% 10%;
+  padding: 5% 7.5%;
 }
 #cont3-data h1 {
   /* color: white; */

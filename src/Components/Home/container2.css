@@ -1,6 +1,6 @@
 #container2 {
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 7.5%;
     /* background-color: #030305; */
     /* background-color: gainsboro; */
   
@@ -16,6 +16,7 @@
     color: white;
     position: relative;
   }
+  
   .cont-slider-text {
     display: flex;
     justify-content: space-between;

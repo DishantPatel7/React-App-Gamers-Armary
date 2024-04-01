@@ -1,11 +1,13 @@
 import "./header.css";
+import logo from "../Images/Screenshot_2024-03-31_154600111-removebg-preview.png";
 function Head() {
   return (
     <>
+    <div id="header">
       <header>
         <div>
           {/* <a href="">
-            <img src="./Images/logo/p3-removebg-preview.png" alt="" />
+            <img src={logo} alt="" />
           </a> */}
           <a href="">Gamer's Armary</a>
         </div>
@@ -24,6 +26,7 @@ function Head() {
           {/* Contacts ,Support , About Us,news*/}
         </div>
       </header>
+      </div>
     </>
   );
 }
