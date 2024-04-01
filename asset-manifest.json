@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-App-Gamers-Armary/static/css/main.a2f4bac6.css",
-    "main.js": "/React-App-Gamers-Armary/static/js/main.87b7ea4e.js",
+    "main.css": "/React-App-Gamers-Armary/static/css/main.31fdc374.css",
+    "main.js": "/React-App-Gamers-Armary/static/js/main.735c5163.js",
     "static/js/453.8b72f5a2.chunk.js": "/React-App-Gamers-Armary/static/js/453.8b72f5a2.chunk.js",
     "static/media/s8.png": "/React-App-Gamers-Armary/static/media/s8.080adb48111030a6350d.png",
     "static/media/s2.webp": "/React-App-Gamers-Armary/static/media/s2.491320bdbc5245302420.webp",
@@ -26,6 +26,7 @@
     "static/media/g1.webp": "/React-App-Gamers-Armary/static/media/g1.5443b96a804d6ca1443f.webp",
     "static/media/s3.webp": "/React-App-Gamers-Armary/static/media/s3.4405ea34f84f306d5c09.webp",
     "static/media/bg-4.webp": "/React-App-Gamers-Armary/static/media/bg-4.4eff8a3262e471b9c354.webp",
+    "static/media/bg2.webp": "/React-App-Gamers-Armary/static/media/bg2.4eff8a3262e471b9c354.webp",
     "static/media/g8.webp": "/React-App-Gamers-Armary/static/media/g8.fbcba5737398943ab189.webp",
     "static/media/c4.webp": "/React-App-Gamers-Armary/static/media/c4.3175debf41e85739b088.webp",
     "static/media/bg-1.webp": "/React-App-Gamers-Armary/static/media/bg-1.81d4fca89e5c23505a50.webp",
@@ -33,6 +34,7 @@
     "static/media/g11.webp": "/React-App-Gamers-Armary/static/media/g11.ecac47e911281adf45fe.webp",
     "static/media/c1.avif": "/React-App-Gamers-Armary/static/media/c1.9abc6856dbc35a1acccb.avif",
     "static/media/Chronosplit.webp": "/React-App-Gamers-Armary/static/media/Chronosplit.19023903ba10a1bf03ed.webp",
+    "static/media/Screenshot_2024-03-31_154600111-removebg-preview.png": "/React-App-Gamers-Armary/static/media/Screenshot_2024-03-31_154600111-removebg-preview.420421325193a5c619b5.png",
     "static/media/p3-removebg-preview.png": "/React-App-Gamers-Armary/static/media/p3-removebg-preview.fc3a238701d7ea9b38c0.png",
     "static/media/Kira.webp": "/React-App-Gamers-Armary/static/media/Kira.761b4e412d9d566869e1.webp",
     "static/media/Dead at Last.webp": "/React-App-Gamers-Armary/static/media/Dead at Last.9afda65c420761e516a1.webp",
@@ -53,12 +55,12 @@
     "static/media/Visa.webp": "/React-App-Gamers-Armary/static/media/Visa.37ae626c1576fb5e38aa.webp",
     "static/media/Master Card.webp": "/React-App-Gamers-Armary/static/media/Master Card.7da9db4dabaaca7b9097.webp",
     "index.html": "/React-App-Gamers-Armary/index.html",
-    "main.a2f4bac6.css.map": "/React-App-Gamers-Armary/static/css/main.a2f4bac6.css.map",
-    "main.87b7ea4e.js.map": "/React-App-Gamers-Armary/static/js/main.87b7ea4e.js.map",
+    "main.31fdc374.css.map": "/React-App-Gamers-Armary/static/css/main.31fdc374.css.map",
+    "main.735c5163.js.map": "/React-App-Gamers-Armary/static/js/main.735c5163.js.map",
     "453.8b72f5a2.chunk.js.map": "/React-App-Gamers-Armary/static/js/453.8b72f5a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2f4bac6.css",
-    "static/js/main.87b7ea4e.js"
+    "static/css/main.31fdc374.css",
+    "static/js/main.735c5163.js"
   ]
 }
