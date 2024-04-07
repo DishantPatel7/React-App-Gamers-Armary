@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-#product {
+#Gamelanding {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.04vw;
   /* overflow:hidden ; */
@@ -22,7 +22,7 @@
   width: 100%;
   /* height: 100%; */
   max-width: 85%;
-  top: 18%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   box-sizing: border-box;
@@ -33,7 +33,7 @@
 #p-content-L {
   width: 50%;
   /* background-color: rgb(25, 93, 138); */
-  padding-left: 1.2em;
+  padding-left: 1em
 }
 #p-content-L h1 {
   font-size: 3vw;
@@ -174,6 +174,10 @@
 #pro2 .edition-tx {
   padding: 1.5vw 2vw;
 }
+.edition-tx-details {
+  min-height: 28vh;
+  /* background-color:#6a0101; */
+}
 #pro2 .edition-tx .edition-tx-p1 {
   text-align: center;
   font-size: 1.25vw;
@@ -194,6 +198,7 @@
 }
 #pro2 .edition-price {
   /* background-color: beige; */
+  min-height: 8vh;
 }
 #pro2 .edition-price .edition-p1 {
   font-size: 1.6vw;
@@ -212,9 +217,10 @@
   color: gray;
 }
 #pro2 .edition-btn {
+  margin-top: 1.5vh;
 }
 #pro2 .edition-btn button {
-  margin: 1.3vw 0;
+  margin-bottom: 1.3vw;
   border: none;
   outline: none;
   cursor: pointer;
@@ -262,7 +268,7 @@
   width: 50%;
 }
 #pro3-content-L p {
-  font-size: 0.95vw;
+  font-size: .95vw;
   color: gray;
 }
 #pro3-content-L h1 {
@@ -296,7 +302,7 @@
   /* background-color: gray; */
   padding: 0 15%;
   color: white;
-  font-size: 1.05vw;
+  font-size: 0.93vw;
 }
 #pro4-content-L {
   /* background-color: #6a0101/; */
@@ -305,9 +311,6 @@
   display: grid;
   grid-template-columns: repeat(2, 12vw);
   grid-template-rows: 2em;
-}
-#pro4-content-L p {
-  /* padding: .5vw 0; */
 }
 #pro4-content-R {
   width: 50%;
@@ -327,7 +330,7 @@
   max-width: 85%;
   /* background-color: rgb(245, 172, 172); */
   color: white;
-  font-size: 1.05vw;
+  font-size: 0.95vw;
   text-align: center;
   padding: 4% 0;
 }

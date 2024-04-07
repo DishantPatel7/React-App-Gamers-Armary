@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
 #header {
   padding-top: 2vh;
 }
@@ -23,28 +25,87 @@ header {
 
   font-family: "Poppins", sans-serif;
 }
+
 header div:nth-child(1) {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   /* background-color: red; */
 }
-header div:nth-child(1) img {
-  height: 7vh;
-}
-header div:nth-child(1) a:nth-child(1) {
-  /* font-family: "Rubik Doodle Shadow", system-ui; */
-  font-family: trail1;
+/* #logo a button {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-family: "Major Mono Display", monospace;
   font-size: 2.5vw;
-  /* color: #f1683a; */
-}
-header a {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 1vw;
+} */
+
+/* header a {
   text-decoration: none;
   color: white;
   margin: 0 1vw;
   font-size: 1vw;
   position: relative;
+} */
+
+.dropbtn {
+  /* background-color: #04aa6d; */
+  background: transparent;
+  color: white;
+  padding: 1vw;
+  font-size: 1vw;
+  border: none;
 }
-header div:nth-child(2) a:nth-child(1)::after,
+
+.dropdown {
+  position: relative;
+  display:inline-block;
+  /* display: none; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 1vw;
+  padding-left:.5vw;
+
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 6px; */
+  padding: .6vw .3vw;
+  text-decoration: none;
+  display: block;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  backdrop-filter: blur(100px);
+}
+
+
+#menu{
+  /* display: block; */
+}
+
+
+
+/* header div:nth-child(2) a:nth-child(1)::after,
 header div:nth-child(2) a:nth-child(2)::after,
 header div:nth-child(2) a:nth-child(3)::after,
 header div:nth-child(2) a:nth-child(4)::after,
@@ -64,4 +125,4 @@ header div:nth-child(2) a:nth-child(3):hover::after,
 header div:nth-child(2) a:nth-child(4):hover::after,
 header div:nth-child(2) a:nth-child(5):hover::after {
   width: 100%;
-}
+} */

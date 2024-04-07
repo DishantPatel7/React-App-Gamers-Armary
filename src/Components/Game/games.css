@@ -1,7 +1,7 @@
 #games-div {
   width: 100%;
   background-color: #121314;
-  padding:5%;
+  padding: 5%;
   margin-top: -10vh;
 }
 #games-div h1 {
@@ -62,11 +62,12 @@
   filter: brightness(70%);
 }
 #games-div .gs1 img:hover {
-  filter: brightness(110%);
+  filter: brightness(100%);
   transform: scale(1.03);
 }
 #games-div .gs1 p {
   color: white;
   font-weight: 350;
   font-size: 0.85em;
+  padding-top: 0.4vw;
 }

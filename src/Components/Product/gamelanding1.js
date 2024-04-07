@@ -5,9 +5,45 @@ import c2 from "../Images/COD/c2.avif";
 import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
 function Gamelanding() {
+  let gameData = [
+    {
+      img: c1,
+      gName: "Call of Duty®: Warzone™",
+      gPrice: "Free",
+    },
+    {
+      img: c2,
+      gName: "MWIII Cross-Gen",
+      gPrice: "Rs 3,639",
+      MRP: "Rs 5,599",
+      discount: "Save 35%",
+      timePerioad: " Offer ends soon..",
+      li1: "Modern Warfare® III for PS4™/PS5®",
+      li2: "Soap Operator Pack",
+      li3: "Zombie Ghost Operator Skin",
+    },
+    {
+      img: c3,
+      gName: "MWIII Vault",
+      gPrice: "Rs 7,999",
+      li1: "Modern Warfare® III for PS4™/PS5®",
+      li2: "Soap Operator Pack",
+      li3: "Zombie Ghost Operator Skin",
+      li4: "Soul Harvester Weapon Blueprint",
+      li5: "Nemesis Operator Pack",
+      li6: "30 additional Tier Skips",
+    },
+    {
+      img: c4,
+      gName: "MWII Cross-Gen",
+      gPrice: "Rs 4,999",
+      li1: "Modern Warfare® II for PS4™/PS5™",
+      li2: "Warzone™",
+    },
+  ];
   return (
     <>
-      <div id="product">
+      <div id="Gamelanding">
         <div id="pro1">
           <div id="p-content">
             <div id="p-content-L">
@@ -61,30 +97,73 @@ function Gamelanding() {
             </div>
           </div>
         </div>
-        <div id="pro2">2
+        <div id="pro2">
           <div id="pro2-content">
             <h1>
               Buy Call of Duty: Modern Warfare III on Gamer's Armary Store
             </h1>
             <h1>Editions:</h1>
             <div class="edition-div">
+              {/* {gameData.map((data, index) => (
+                <div class="edition" key={index}>
+                  <div class="edition-img">
+                    <img src={data.img} alt="" />
+                  </div>
+                  <div class="edition-tx">
+                    <div class="edition-tx-details">
+                      <p class="edition-tx-p1">{data.gName}</p>
+                      <p class="edition-tx-p2">
+                        <span>PS4</span> <span>PS5</span>
+                      </p>
+                      <div class="edition-des">
+                        <ul>
+                          <li>{data.li1}</li>
+                          <li>{data.li2}</li>
+                          <li>{data.li3}</li>
+                          <li>{data.li4}</li>
+                          <li>{data.li5}</li>
+                          <li>{data.li6}</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="edition-price">
+                      <p class="edition-p1">
+                        {data.gPrice}
+                        <span> {data.MRP}</span>
+                      </p>
+                      <p class="edition-p2">
+                        {data.discount}
+                        <span>{data.timePerioad}</span>
+                      </p>
+                    </div>
+                    <div class="edition-btn">
+                      <button>Add to Cart</button>
+                      <button>
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))} */}
               <div class="edition">
                 <div class="edition-img">
                   <img src={c1} alt="" />
                 </div>
                 <div class="edition-tx">
-                  <p class="edition-tx-p1">Call of Duty®: Warzone™</p>
-                  <p class="edition-tx-p2">
-                    <span>PS4</span> <span>PS5</span>
-                  </p>
+                  <div class="edition-tx-details">
+                    <p class="edition-tx-p1">Call of Duty®: Warzone™</p>
+                    <p class="edition-tx-p2">
+                      <span>PS4</span> <span>PS5</span>
+                    </p>
+                  </div>
                   <div class="edition-price">
                     <p class="edition-p1">Free</p>
-                    <div class="edition-btn">
-                      <button>Add to Library</button>
-                      <button>
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
+                  </div>
+                  <div class="edition-btn">
+                    <button>Add to Library</button>
+                    <button>
+                      <i class="ri-heart-line"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -92,17 +171,20 @@ function Gamelanding() {
                 <div class="edition-img">
                   <img src={c2} alt="" />
                 </div>
+
                 <div class="edition-tx">
-                  <p class="edition-tx-p1">MWIII Cross-Gen</p>
-                  <p class="edition-tx-p2">
-                    <span>PS4</span> <span>PS5</span>
-                  </p>
-                  <div class="edition-des">
-                    <ul>
-                      <li>Modern Warfare® III for PS4™/PS5®</li>
-                      <li>Soap Operator Pack</li>
-                      <li>Zombie Ghost Operator Skin</li>
-                    </ul>
+                  <div class="edition-tx-details">
+                    <p class="edition-tx-p1">MWIII Cross-Gen</p>
+                    <p class="edition-tx-p2">
+                      <span>PS4</span> <span>PS5</span>
+                    </p>
+                    <div class="edition-des">
+                      <ul>
+                        <li>Modern Warfare® III for PS4™/PS5®</li>
+                        <li>Soap Operator Pack</li>
+                        <li>Zombie Ghost Operator Skin</li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="edition-price">
                     <p class="edition-p1">
@@ -111,12 +193,12 @@ function Gamelanding() {
                     <p class="edition-p2">
                       Save 35% <span>Offer ends soon..</span>
                     </p>
-                    <div class="edition-btn">
-                      <button>Add to Cart</button>
-                      <button>
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
+                  </div>
+                  <div class="edition-btn">
+                    <button>Add to Cart</button>
+                    <button>
+                      <i class="ri-heart-line"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -125,28 +207,30 @@ function Gamelanding() {
                   <img src={c3} alt="" />
                 </div>
                 <div class="edition-tx">
-                  <p class="edition-tx-p1">MWIII Vault</p>
-                  <p class="edition-tx-p2">
-                    <span>PS4</span> <span>PS5</span>
-                  </p>
-                  <div class="edition-des">
-                    <ul>
-                      <li>Modern Warfare® III for PS4™/PS5®</li>
-                      <li>Soap Operator Pack</li>
-                      <li>Zombie Ghost Operator Skin</li>
-                      <li>Soul Harvester Weapon Blueprint</li>
-                      <li>Nemesis Operator Pack</li>
-                      <li>30 additional Tier Skips</li>
-                    </ul>
+                  <div class="edition-tx-details">
+                    <p class="edition-tx-p1">MWIII Vault</p>
+                    <p class="edition-tx-p2">
+                      <span>PS4</span> <span>PS5</span>
+                    </p>
+                    <div class="edition-des">
+                      <ul>
+                        <li>Modern Warfare® III for PS4™/PS5®</li>
+                        <li>Soap Operator Pack</li>
+                        <li>Zombie Ghost Operator Skin</li>
+                        <li>Soul Harvester Weapon Blueprint</li>
+                        <li>Nemesis Operator Pack</li>
+                        <li>30 additional Tier Skips</li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="edition-price">
                     <p class="edition-p1">Rs 7,999</p>
-                    <div class="edition-btn">
-                      <button>Add to Cart</button>
-                      <button>
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
+                  </div>
+                  <div class="edition-btn">
+                    <button>Add to Cart</button>
+                    <button>
+                      <i class="ri-heart-line"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -155,24 +239,27 @@ function Gamelanding() {
                   <img src={c4} alt="" />
                 </div>
                 <div class="edition-tx">
-                  <p class="edition-tx-p1">MWII Cross-Gen</p>
-                  <p class="edition-tx-p2">
-                    <span>PS4</span> <span>PS5</span>
-                  </p>
-                  <div class="edition-des">
-                    <ul>
-                      <li>Modern Warfare® II for PS4™/PS5™</li>
-                      <li>Warzone™</li>
-                    </ul>
+                  <div class="edition-tx-details">
+                    <p class="edition-tx-p1">MWII Cross-Gen</p>
+                    <p class="edition-tx-p2">
+                      <span>PS4</span> <span>PS5</span>
+                    </p>
+                    <div class="edition-des">
+                      <ul>
+                        <li>Modern Warfare® II for PS4™/PS5™</li>
+                        <li>Warzone™</li>
+                      </ul>
+                    </div>
                   </div>
+
                   <div class="edition-price">
                     <p class="edition-p1">Rs 4,999</p>
-                    <div class="edition-btn">
-                      <button>Add to Cart</button>
-                      <button>
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
+                  </div>
+                  <div class="edition-btn">
+                    <button>Add to Cart</button>
+                    <button>
+                      <i class="ri-heart-line"></i>
+                    </button>
                   </div>
                 </div>
               </div>

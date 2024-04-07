@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #container2 {
-    width: 100%;
-    padding: 5% 7.5%;
-    /* background-color: #030305; */
-    /* background-color: gainsboro; */
-  
-    /* background: rgb(141, 106, 219);
+  width: 100%;
+  padding: 5% 7.5% 2% 7.5%;
+  /* background-color: #030305; */
+  /* background-color: gainsboro; */
+
+  /* background: rgb(141, 106, 219);
     background: linear-gradient(
       228deg,
       rgba(141, 106, 219, 0.9893207282913166) 0%,
@@ -12,62 +13,70 @@
       rgba(121, 81, 204, 1) 41%,
       rgba(107, 46, 237, 1) 100%
     ); */
-    background-color: #060506;
-    color: white;
-    position: relative;
-  }
-  
-  .cont-slider-text {
-    display: flex;
-    justify-content: space-between;
-  }
-  .cont-slider-text h1 {
-    /* color: #f1683a; */
-    font-size: 3vw;
-    font-weight: 600;
-  }
-  .cont-slider-text button {
-    font-size: 1.3vw;
-    margin: 5px;
-    border-radius: 2vw;
-    padding: 0.1vh 1vw;
-    background-color: white;
-    border: 4px solid #f1683a;
-    /* color: #8858ed; */
-  }
-  #bestseller {
-    display: flex;
-    align-items: center;
-    /* background-color: red; */
-    height: 72vh;
-    padding-top: 5%;
-  }
-  #bestseller .slideText p:nth-child(1),
-  #bestseller .slideText p:nth-child(2) {
-    padding-top: 1vh;
-    font-weight: bold;
-  }
-  #bestseller .slideImg {
-    overflow: hidden;
-  }
-  #bestseller .slideImg img {
-    transition: all ease 0.5s;
-  }
-  #bestseller .slideImg img:hover {
-    transform: scale(1.2);
-  }
-  #bestseller .slideText button {
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    border: 2px solid #f1683a;
-    border-radius: 2vw;
-    padding: 1.2vw;
-    cursor: pointer;
-  }
-  #bestseller .slideText button:hover {
-    color: #f1683a;
-  }
-  
+  background-color: #211F23;
+  color: white;
+  position: relative;
+}
+
+.cont-slider-text {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-slider-text h1 {
+  /* color: #f1683a; */
+  font-size: 3vw;
+  font-weight: 600;
+}
+#container2 .cont-slider-text button {
+  margin: .25vw 0;
+  font-size: 1.1vw;
+  border-radius: 2vw;
+  padding:  .1vw 1.2vw;
+  background-color: white;
+  border: 4px solid #f1683a;
+}
+#bestseller {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  height: 90vh;
+  padding-top: 2%;
+}
+#bestseller .slideImg {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  height: 20vw;
+}
+#bestseller .slideImg img {
+  transition: all ease 0.5s;
+  width: 100%;
+  height: 100%;
+}
+#bestseller .slideImg img:hover {
+  transform: scale(1.2);
+}
+#bestseller .slideText{
+  padding-top: 1.5vh;
+  min-height: 135px;
+  /* background-color: red; */
+}
+#bestseller .slideText p:nth-child(1),
+#bestseller .slideText p:nth-child(2) {
+  padding-top: 1.5vh;
+  font-weight: bold;
+}
+
+#bestseller .cont2-btn button {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #f1683a;
+  border-radius: 2vw;
+  padding: 1.2vw;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+#bestseller .cont2-btn button:hover {
+  color: #f1683a;
+}
