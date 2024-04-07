@@ -129,6 +129,7 @@ function Cont2() {
               </div>
               <div class="cont2-btn">
                 <button>Add to Cart</button>
+                
               </div>
             </SwiperSlide>
             <SwiperSlide>
