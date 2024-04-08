@@ -12,7 +12,7 @@ import Gamelandpage from "./Pages/gameLandingPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/React-App-Gamers-Armary",
     element: <App />,
   },
   {

@@ -100,7 +100,7 @@ function Head() {
             </ul>
             <ul>
               <li>
-                <Link to="/">
+                <Link to="/React-App-Gamers-Armary">
                   Gamer's Armary
                 </Link>
               </li>
