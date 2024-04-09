@@ -5,7 +5,7 @@ import Login2 from "../Components/Login/login2";
 function Loginpage() {
   return (
     <>
-      <Head />
+      {/* <Head /> */}
       {/* <Login /> */}
       <Login2 />
     </>

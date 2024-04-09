@@ -8,6 +8,7 @@
   height: 120vh;
   background: url(../Images/bg-4.webp);
   background-size: cover;
+  background-repeat: repeat;
   z-index: -1;
 }
 #cont3-data{

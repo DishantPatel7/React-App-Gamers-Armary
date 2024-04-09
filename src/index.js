@@ -9,6 +9,8 @@ import Games from "./Components/Game/games";
 import Gamepage from "./Pages/gamesPage";
 import Loginpage from "./Pages/loginpage";
 import Gamelandpage from "./Pages/gameLandingPage";
+import Browseby from "./Components/Product/Browseby";
+import Test from "./Components/Product/Test";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +22,20 @@ const router = createBrowserRouter([
     element: <Gamepage />,
   },
   {
+    path: "/Browseby",
+    element: <Browseby />,
+  },
+  {
+    path: "/test",
+    element: <Test />,
+  },
+  {
     path: "/gamelanding",
-    element: <Gamelandpage/>,
-  },{
+    element: <Gamelandpage />,
+  },
+  {
     path: "/login2",
-    element: <Loginpage/>,
+    element: <Loginpage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

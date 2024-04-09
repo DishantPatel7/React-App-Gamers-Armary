@@ -1,15 +1,39 @@
 import React from "react";
 import "./Browseby.css";
-import L1 from "../Images/Laptops/L1.jpg";
+import M1 from "../Images/Laptops/M1.jpg";
+import M2 from "../Images/Laptops/M2.jpg";
 import Head from "../Header/header";
+import { Link } from "react-router-dom";
+import Test from "./Test";
 
 const Browseby = () => {
-  let productsData = [
+  const productsData = [
     {
-      img: L1,
-      name: "HP Omen Gaming Laptop, AMD Ryzen™ 7 7840HS",
-      price: "₹1,11,990",
+      img: M1,
+      name: "Cosmic Byte Kilonova 3335IC Wireless",
+      price: " ₹2,969",
     },
+    {
+      img: M2,
+      name: "ZEBRONICS Marine Wireless Gaming Mouse",
+      price: "₹799",
+    },
+    {
+      img: M2,
+      name: "",
+      price: "",
+    },
+    {
+      img: M2,
+      name: "",
+      price: "",
+    },
+    {
+      img: M2,
+      name: "",
+      price: "",
+    },
+    
   ];
   return (
     <>
@@ -18,25 +42,29 @@ const Browseby = () => {
         <div class="Products-content">
           <div class="Products-L">
             <div>
-              Home<i class="ri-arrow-right-s-line"></i>
+              <Link to="/React-App-Gamers-Armary">
+                Home<i class="ri-arrow-right-s-line"></i>
+              </Link>
               <p>hello</p>
             </div>
             <div id="browseBy">
               <h1>Browse by</h1>
               <hr />
               <div id="All-Products">
-                <p>All Products</p>
-                <p>Accessories</p>
-                <p>Best Sellers</p>
-                <p>Consoles</p>
-                <p>Controllers</p>
-                <p>Games</p>
-                <p>On Sale</p>
+                <Link to="./">All Products </Link>
+                <Link to="/test">Accessories </Link>
+                <Link to="./">Best Sellers </Link>
+                <Link to="./">Consoles </Link>
+                <Link to="./">Controllers </Link>
+                <Link to="./">Games </Link>
+                <Link to="./">On Sale </Link>
               </div>
             </div>
           </div>
+
           <div class="Products-R">
             <h1>All Products</h1>
+            <p>26 Products</p>
             <div class="Products-items">
               {productsData.map((test, index) => (
                 <div class="pro-item-Card" key={index}>
@@ -64,6 +92,7 @@ const Browseby = () => {
                   <button>Add to Cart</button>
                 </div>
               </div> */}
+              {/* <div class="pro-item-Card"></div>
               <div class="pro-item-Card"></div>
               <div class="pro-item-Card"></div>
               <div class="pro-item-Card"></div>
@@ -73,8 +102,7 @@ const Browseby = () => {
               <div class="pro-item-Card"></div>
               <div class="pro-item-Card"></div>
               <div class="pro-item-Card"></div>
-              <div class="pro-item-Card"></div>
-              <div class="pro-item-Card"></div>
+              <div class="pro-item-Card"></div> */}
             </div>
           </div>
         </div>

@@ -1,10 +1,13 @@
 import "./gamelanding.css";
+import React from "react";
 import iarc_18 from "../Images/iarc_18.webp";
 import c1 from "../Images/COD/c1.avif";
 import c2 from "../Images/COD/c2.avif";
 import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
-function Gamelanding() {
+import { useState } from "react";
+
+const Gamelanding = () => {
   let gameData = [
     {
       img: c1,
@@ -41,6 +44,8 @@ function Gamelanding() {
       li2: "Warzone™",
     },
   ];
+  const [count, setCount] = useState(0);
+
   return (
     <>
       <div id="Gamelanding">
@@ -64,7 +69,20 @@ function Gamelanding() {
               </p>
               <div id="p-content-L-btn">
                 <button>Add to Cart</button>
-                <button>
+                <button
+                  id="like"
+                  onClick={() => {
+                    if (count % 2 == 0) {
+                      setCount(count + 1);
+                      document.getElementById("like").style.backgroundColor =
+                        "red";
+                    } else {
+                      setCount(count - 1);
+                      document.getElementById("like").style.backgroundColor =
+                        "rgba(128, 128, 128, 0.329)";
+                    }
+                  }}
+                >
                   <i class="ri-heart-line"></i>
                 </button>
               </div>
@@ -378,5 +396,6 @@ function Gamelanding() {
       </div>
     </>
   );
-}
+};
+
 export default Gamelanding;
