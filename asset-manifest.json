@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-App-Gamers-Armary/static/css/main.f3a3d501.css",
+    "main.css": "/React-App-Gamers-Armary/static/css/main.0d3c2e53.css",
     "main.js": "/React-App-Gamers-Armary/static/js/main.95ac2ea8.js",
     "static/js/453.8b72f5a2.chunk.js": "/React-App-Gamers-Armary/static/js/453.8b72f5a2.chunk.js",
     "static/media/s8.png": "/React-App-Gamers-Armary/static/media/s8.080adb48111030a6350d.png",
@@ -58,12 +58,12 @@
     "static/media/Visa.webp": "/React-App-Gamers-Armary/static/media/Visa.37ae626c1576fb5e38aa.webp",
     "static/media/Master Card.webp": "/React-App-Gamers-Armary/static/media/Master Card.7da9db4dabaaca7b9097.webp",
     "index.html": "/React-App-Gamers-Armary/index.html",
-    "main.f3a3d501.css.map": "/React-App-Gamers-Armary/static/css/main.f3a3d501.css.map",
+    "main.0d3c2e53.css.map": "/React-App-Gamers-Armary/static/css/main.0d3c2e53.css.map",
     "main.95ac2ea8.js.map": "/React-App-Gamers-Armary/static/js/main.95ac2ea8.js.map",
     "453.8b72f5a2.chunk.js.map": "/React-App-Gamers-Armary/static/js/453.8b72f5a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3a3d501.css",
+    "static/css/main.0d3c2e53.css",
     "static/js/main.95ac2ea8.js"
   ]
 }
