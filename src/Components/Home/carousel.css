@@ -68,7 +68,7 @@
   bottom: 50px;
   left: 50%;
   width: max-content;
-  z-index: 100;
+  z-index: 20;
   display: flex;
   gap: 1vw;
 }
