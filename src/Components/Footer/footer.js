@@ -6,6 +6,7 @@ import p3 from "../Images/Payments/American Express.webp";
 import p4 from "../Images/Payments/Discover.webp";
 import p5 from "../Images/Payments/JCB.webp";
 import p6 from "../Images/Payments/PayPal.webp";
+import { Link } from "react-router-dom";
 function Foot() {
   return (
     <>
@@ -17,10 +18,10 @@ function Foot() {
           </div>
           <div class="detials">
             <p>Products</p>
-            <p>Games</p>
-            <p>Consoles</p>
-            <p>Controllers</p>
-            <p>Accessories</p>
+            <Link to="/games">Games</Link>
+            <Link to="/Consoles">Consoles</Link>
+            <Link to="/Controllers">Controllers</Link>
+            <Link to="/Accessories">Accessories</Link>
           </div>
           <div class="detials">
             <p>Store</p>

@@ -1,32 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-/* #header {
-  padding-top: 2vh;
-} */
 header {
-  margin-top: 2vh;
+  position: fixed;
+  margin-top: 2.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: rebeccapurple; */
   height: 8vh;
-  /* margin-top: 2vh; */
+  width: 100%;
+  z-index: 100;
 }
 nav {
   display: flex;
   align-items: center;
   height: 100%;
-  z-index: 100;
   background-color: #eee;
   width: 100%;
   max-width: 90%;
-  background: rgba(143, 61, 215, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 0, 0, 0.049);
+  box-shadow: 1px 1px 33px 0 rgba(0, 0, 0, 0.708);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: none;
   padding: 0 0.5vw;
   font-family: "Poppins", sans-serif;
+  /* for making navbarhidden after scroll */
+  transition: all ease-in-out 0.2s;
+  animation: NavbarHidden linear forwards;
+  animation-timeline: scroll();
+  animation-range: 150vh 150vh;
+}
+@keyframes NavbarHidden {
+  to {
+    opacity: 0;
+  }
 }
 nav ul {
   width: 100%;
@@ -82,22 +90,40 @@ nav li:first-child {
 .sidebar a {
   width: 100%;
 }
-
-#Cart {
+#search {
   position: fixed;
-  top: 0;
-  right: 0;
-  height: 90vh;
-  width: 350px;
+  top: 15vh;
+  right: 20vw;
+  height: 10vh;
+  width: 50vw;
   z-index: 100;
-  background: gray;
+  background: rgb(199, 194, 194);
+  color: #eee;
   backdrop-filter: blur(100px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all ease-in 2s;
+  /* transition: all ease-in 2s; */
+}
+#Cart {
+  position: fixed;
+  top: 0;
+  right: -5vw;
+  height: 95vh;
+  width: 25vw;
+  z-index: 100;
+  /* background: #8800FF; */
+  background: rgb(15, 14, 14);
+  color: #eee;
+  backdrop-filter: blur(100px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* transition: all ease-in 2s; */
 }
 .cartName {
   position: relative;
@@ -105,17 +131,20 @@ nav li:first-child {
   align-items: center;
   width: 100%;
   height: 60px;
-  background: #593e3e;
+  /* background: #593e3e; */
 }
 .cartName h1 {
   width: 70%;
   text-align: center;
+  font-size: 1.8vw;
 }
 .cartName button {
   /* width: 20%; */
   border: none;
   font-size: 3vw;
-  /* background: transparent; */
+  background: transparent;
+  color: #eee;
+  cursor: pointer;
 }
 .cart-info {
   width: 100%;
@@ -123,9 +152,10 @@ nav li:first-child {
 }
 .cart-items-show {
   display: flex;
-  background: #eee;
+  /* background: #eee; */
+  /* background: black; */
   gap: 1vw;
-  height: 55vh;
+  height: 58vh;
 }
 .cart-item-img {
   background: #1aae35;
@@ -139,15 +169,23 @@ nav li:first-child {
 }
 .cart-product-info {
   line-height: 1.8vw;
+  font-size: 1.1vw;
 }
 .cart-item-addon-btn {
   display: flex;
   border: 1px solid black;
+  width: 5.5vw;
+  /* background: red; */
+  border: 1px solid #eee;
 }
 .cart-item-addon-btn button {
   border: none;
+  outline: none;
   font-size: 1.5vw;
   padding: 0 0.5vw;
+  width: 2.1vw;
+  color: #eee;
+  background: transparent;
 }
 .cart-item-addon-btn p {
   padding: 0 0.2vw;
@@ -158,24 +196,31 @@ nav li:first-child {
 } */
 
 .subtotal-price {
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
   padding: 1.1vw 1vw;
   font-size: 1.3vw;
 }
 .subtotal-price span {
   font-weight: bold;
 }
+#Cart hr {
+  height: 1px;
+  background: gray;
+  border: none;
+}
 .view-cart-btn {
   width: 100%;
   padding: 1vw;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   display: flex;
   justify-content: center;
 }
 .view-cart-btn button {
   padding: 0.8vw 5vw;
-  border-radius: 1.5vw;
-  /* border: none; */
+  border-radius: 0.3vw;
+  border: none;
+  color: #eee;
+  background: #8800ff;
   font-size: 1.1vw;
   font-weight: 600;
 }
@@ -205,10 +250,10 @@ nav li:last-child {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: rgba(23, 2, 2, 0.358);
+  background: rgba(49, 31, 31, 0.719);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  min-width: 100px;
+  min-width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding-left: 0.5vw;
@@ -220,10 +265,7 @@ nav li:last-child {
   right: 0;
 }
 .dropdown-content a {
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  /* color: black; */
-  color: orangered;
+  color: #eee;
   padding: 0.8vw 0.3vw;
   text-decoration: none;
   display: block;
@@ -231,7 +273,7 @@ nav li:last-child {
 }
 
 .dropdown-content a:hover {
-  color: #eee;
+  color: red;
   background: rgba(33, 9, 9, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);

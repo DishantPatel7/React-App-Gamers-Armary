@@ -9,8 +9,14 @@ import Games from "./Components/Game/games";
 import Gamepage from "./Pages/gamesPage";
 import Loginpage from "./Pages/loginpage";
 import Gamelandpage from "./Pages/gameLandingPage";
-import Browseby from "./Components/Product/Browseby";
-import Test from "./Components/Product/Test";
+import Browseby from "./Components/BrowseBy/Browseby";
+import Accessories from "./Components/BrowseBy/Accessories";
+import ProductLanding from "./Components/Product/ProductLanding";
+import Cont6 from "./Components/Home/container6";
+import Bestsellers from "./Components/BrowseBy/Bestsellers";
+import Consoles from "./Components/BrowseBy/Consoles";
+import Controllers from "./Components/BrowseBy/Controllers";
+import Onsale from "./Components/BrowseBy/Onsale";
 
 const router = createBrowserRouter([
   {
@@ -26,16 +32,40 @@ const router = createBrowserRouter([
     element: <Browseby />,
   },
   {
-    path: "/test",
-    element: <Test />,
+    path: "/Accessories",
+    element: <Accessories />,
+  },
+  {
+    path: "/Best-Sellers",
+    element: <Bestsellers />,
+  },
+  {
+    path: "/Consoles",
+    element: <Consoles />,
+  },
+  {
+    path: "/Controllers",
+    element: <Controllers />,
+  },
+  {
+    path: "/On Sale",
+    element: <Onsale />,
   },
   {
     path: "/gamelanding",
     element: <Gamelandpage />,
   },
   {
+    path: "/ProductLanding",
+    element: <ProductLanding />,
+  },
+  {
     path: "/login2",
     element: <Loginpage />,
+  },
+  {
+    path: "/Contact Us",
+    element: <Cont6 />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

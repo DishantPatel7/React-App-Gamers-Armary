@@ -2,6 +2,7 @@ import "./container3.css";
 import c31 from "../Images/console.webp";
 import c32 from "../Images/Accessories1.png";
 import c33 from "../Images/Controllers.jpeg";
+import { Link } from "react-router-dom";
 function Cont3() {
   return (
     <>
@@ -12,26 +13,25 @@ function Cont3() {
           <div class="category-item">
             <div class="item">
               <div class="item-div">
-                <a href="">
+                <Link to="/Consoles">
                   <img src={c31} alt="" />
-                </a>
+                </Link>
               </div>
               <p>Console</p>
             </div>
             <div class="item">
               <div class="item-div">
-                <a href="">
+                <Link to="/Accessories">
                   <img src={c32} alt="" />
-                </a>
+                </Link>
               </div>
-
               <p>Accessories</p>
             </div>
             <div class="item">
               <div class="item-div">
-                <a href="">
+                <Link to="/Controllers">
                   <img src={c33} alt="" />
-                </a>
+                </Link>
               </div>
               <p>Controllers</p>
             </div>

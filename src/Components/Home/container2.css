@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #container2 {
   width: 100%;
-  padding: 5% 7.5% 2% 7.5%;
+  padding: 5% 5% 2%;
   /* background-color: #030305; */
   /* background-color: gainsboro; */
 
@@ -13,7 +13,8 @@
       rgba(121, 81, 204, 1) 41%,
       rgba(107, 46, 237, 1) 100%
     ); */
-  background-color: #211F23;
+  background-color: #211f23;
+  background-image: linear-gradient(to bottom, #5d0000, #53308b, #04020f);
   color: white;
   position: relative;
 }
@@ -28,10 +29,10 @@
   font-weight: 600;
 }
 #container2 .cont-slider-text button {
-  margin: .25vw 0;
+  margin: 0.25vw 0;
   font-size: 1.1vw;
   border-radius: 2vw;
-  padding:  .1vw 1.2vw;
+  padding: 0.1vw 1.2vw;
   background-color: white;
   border: 4px solid #f1683a;
 }
@@ -48,6 +49,7 @@
   justify-content: center;
   width: 20vw;
   height: 20vw;
+  border-radius: 0.5vw;
 }
 #bestseller .slideImg img {
   transition: all ease 0.5s;
@@ -57,9 +59,10 @@
 #bestseller .slideImg img:hover {
   transform: scale(1.2);
 }
-#bestseller .slideText{
+#bestseller .slideText {
   padding-top: 1.5vh;
   min-height: 135px;
+  font-size: 1.2vw;
   /* background-color: red; */
 }
 #bestseller .slideText p:nth-child(1),
@@ -70,13 +73,19 @@
 
 #bestseller .cont2-btn button {
   font-weight: bold;
+  font-size: 1.05vw;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #f1683a;
-  border-radius: 2vw;
-  padding: 1.2vw;
+  outline: none;
+  background: #8800ff;
+  color: #eee;
+  border-radius: 0.3vw;
+  padding: 1vw 1.1vw;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
+  border: 2px solid #8800ff;
 }
 #bestseller .cont2-btn button:hover {
-  color: #f1683a;
+  color: #8800ff;
+  background: #eee;
+  border-radius: 0.5vw;
 }

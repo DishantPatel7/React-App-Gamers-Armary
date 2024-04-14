@@ -24,6 +24,11 @@ function Games() {
       name: "Rise of the Ronin",
     },
     {
+      img: g9,
+      name: "Call of Duty: Modern Warfare III",
+      url: "/gamelanding",
+    },
+    {
       img: g3,
       name: "The Last of Us Part II Remastered",
     },
@@ -47,11 +52,7 @@ function Games() {
       img: g8,
       name: "Marvel's Spider-Man 2",
     },
-    {
-      img: g9,
-      name: "Call of Duty: Modern Warfare III",
-      url:"/gamelanding"
-    },
+
     {
       img: g10,
       name: "God of War Ragnarök",
@@ -79,7 +80,7 @@ function Games() {
           {gameset.map((test, index) => (
             <div class="gs1" key={index}>
               <Link to={test.url}>
-              <img src={test.img} alt="" /> <p>{test.name}</p>
+                <img src={test.img} alt="" /> <p>{test.name}</p>
               </Link>
             </div>
           ))}

@@ -3,6 +3,7 @@ import "./header2.css";
 import logo from "../Images/Screenshot_2024-03-31_154600111-removebg-preview.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import H1 from "../Images/Headphones/H1.webp"
 
 function Head() {
   function showSlidebar() {
@@ -11,7 +12,7 @@ function Head() {
   function hideSidebar() {
     document.querySelector(".sidebar").style.display = "none";
   }
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   return (
     <>
       <header>
@@ -108,12 +109,12 @@ function Head() {
               <Link to="/games">
                 <div class="dropdown">
                   <button class="dropbtn">Games</button>
-                  <div class="dropdown-content">
+                  {/* <div class="dropdown-content">
                     <Link to="/">Action</Link>
                     <Link to="/">Racing</Link>
                     <Link to="/">Shooter</Link>
                     <Link to="/">Simulation</Link>
-                  </div>
+                  </div> */}
                 </div>
               </Link>
             </li>
@@ -122,25 +123,21 @@ function Head() {
                 <div class="dropdown">
                   <button class="dropbtn">Products</button>
                   <div class="dropdown-content">
-                    <Link to="./">Link 1</Link>
-                    <Link to="./">Link 2</Link>
-                    <Link to="./">Link 3</Link>
+                    <Link to="/Accessories">Accessories</Link>
+                    <Link to="/Best-Sellers">Best Sellers</Link>
+                    <Link to="/Consoles">Consoles</Link>
+                    <Link to="/Controllers">Controllers</Link>
                   </div>
                 </div>
               </Link>
             </li>
-            <li class="hideOnMobile">
+            {/* <li class="hideOnMobile">
               <Link to="./">
                 <div class="dropdown">
                   <button class="dropbtn">Deals</button>
-                  <div class="dropdown-content">
-                    <Link to="./">Link 1</Link>
-                    <Link to="./">Link 2</Link>
-                    <Link to="./">Link 3</Link>
-                  </div>
                 </div>
               </Link>
-            </li>
+            </li> */}
             <li class="hideOnMobile">
               <Link to="./">
                 <div class="dropdown">
@@ -180,9 +177,8 @@ function Head() {
                     <i class="ri-more-2-fill"></i>
                   </button>
                   <div class="dropdown-content dropdown-content-last">
-                    <Link to="./">Link 1</Link>
-                    <Link to="./">Link 2</Link>
-                    <Link to="./">Link 3</Link>
+                    <Link to="./">About Us</Link>
+                    <Link to="/Contact Us">Contact Us</Link>
                   </div>
                 </div>
               </Link>
@@ -211,13 +207,13 @@ function Head() {
             <div className="cart-info">
               <div className="cart-items-show">
                 <div className="cart-item-img">
-                  <img src="" alt="img" />
+                  <img src={H1} alt="img" />
                 </div>
                 <div className="cart-product-info">
-                  <div className="cart-item-name">Name</div>
-                  <div className="cart-item-price">₹14,999</div>
+                  <div className="cart-item-name">JET GAMING HEADPHONE</div>
+                  <div className="cart-item-price">₹799</div>
                   <div className="cart-item-addon-btn">
-                    <button onClick={() => setCount((c) => Math.max(c - 1, 0))}>
+                    <button onClick={() => setCount((c) => Math.max(c - 1, 1))}>
                       -
                     </button>
                     <p>{count}</p>
@@ -226,13 +222,16 @@ function Head() {
                 </div>
               </div>
               <div className="subtotal-price">
-                Subtotal:<span> ₹14,999</span>
+                Subtotal:<span> ₹799</span>
               </div>
               <hr />
               <div className="view-cart-btn">
                 <button>View Cart</button>
               </div>
             </div>
+          </ul>
+          <ul id="search">
+            
           </ul>
         </nav>
       </header>

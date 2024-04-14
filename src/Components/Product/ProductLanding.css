@@ -1,0 +1,212 @@
+#ProductLanding {
+  width: 100%;
+  /* background-color: #370b54; */
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background: #eee;
+  background: rgb(27, 25, 25);
+  padding-top: 15vh;
+  color: #eee;
+}
+#ProductLanding .ProductLanding-content {
+  /* background-color: #474404; */
+  max-width: 90%;
+  width: 100%;
+}
+.ProductLanding-content #header {
+  display: flex;
+  justify-content: flex-start;
+  /* background: red; */
+  font-size: 1.1vw;
+  padding-left: 4vw;
+}
+.ProductLanding-content #header a {
+  text-decoration: none;
+  color: black;
+  color: #eee;
+  padding-right: 0.2vw;
+}
+.ProLand-1 {
+  display: flex;
+}
+.ProLand-1-L {
+  width: 60%;
+  /* background: #4e0505; */
+  display: flex;
+  padding: 2% 3% 2% 4%;
+}
+.ProLand-1-L .ProLand-sm-img {
+  width: 12%;
+  height: 90%;
+  /* background: red; */
+  /* margin: 0 15%; */
+}
+.ProLand-1-L .ProLand-sm-img img {
+  margin-top: 15%;
+  width: 100%;
+  height: 15%;
+  padding: 0.1vw;
+  border-radius: 0.5vw;
+  border: 3px solid black;
+}
+.ProLand-1-L .ProLand-img {
+  padding-left: 1.5vw;
+  width: 85%;
+  height: 95%;
+  /* margin: 5% 15%; */
+  /* background: red; */
+}
+.ProLand-1-L .ProLand-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ProLand-1-R {
+  width: 40%;
+  /* background: #eee; */
+  padding: 2% 4% 2% 2%;
+  letter-spacing: 0.03vw;
+}
+.ProLand-1-R h1 {
+  font-weight: 500;
+  font-size: 2.2vw;
+}
+.ProLand-1-R h3 {
+  font-weight: 500;
+  font-size: 1.5vw;
+  padding-top: 1vw;
+  color: #2e9e7b;
+}
+.ProLand-1-R h3 span {
+  font-weight: 500;
+  font-size: 1.12vw;
+  padding-left: 0.7vw;
+  text-decoration: line-through;
+  color: #eee;
+}
+.ProLand-1-R hr {
+  height: 1px;
+  border: none;
+  background: rgb(188, 187, 187);
+  margin: 1.5vw 0;
+}
+.ProLand-1-R p {
+  padding-top: 0.8vw;
+  font-size: 1vw;
+}
+.btn-increament {
+  display: flex;
+  height: 3vw;
+  width: 8vw;
+  margin-top: 0.8vw;
+  background: #eee;
+  border: 2px solid rgb(150, 149, 149);
+  border-radius: 0.3vw;
+  overflow: hidden;
+  color: black;
+}
+.btn-increament button {
+  width: 3.7vw;
+  font-size: 1.3vw;
+  border: none;
+  outline: none;
+}
+.btn-Add-Buy {
+  /* background: red; */
+  margin-top: 2vw;
+}
+.btn-Add-Buy a {
+  text-decoration: none;
+}
+.btn-Add-Buy a button {
+  margin-top: 0.7vw;
+  width: 100%;
+  height: 3.5vw;
+  font-size: 1.15vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 0.6vw;
+  letter-spacing: 0.03vw;
+}
+.btn-Add-Buy a:first-child button {
+  background: rgb(236, 236, 0);
+  color: black;
+}
+.btn-Add-Buy a:last-child button {
+  background: #8800ff;
+  color: #eee;
+}
+.ProLand-1-R h4 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  padding-top: 2vw;
+}
+.pinCode-check {
+  display: flex;
+  margin-top: 0.5vw;
+  height: 3.5vw;
+  /* width: 17vw; */
+  /* background: red; */
+}
+.pinCode-check input {
+  font-size: 1.1vw;
+  padding-left: 0.7vw;
+  border-radius: 0.3vw;
+  border: 1px solid black;
+  outline: none;
+}
+.pinCode-check button {
+  margin-left: 0.5vw;
+  width: 5.5vw;
+  font-size: 1vw;
+  font-weight: 600;
+  background: black;
+  color: #eee;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+}
+.ProLand-2 {
+  /* background: #3b3c29; */
+  padding: 3% 4% 15%;
+  /* height: 100vh; */
+  letter-spacing: 0.03vw;
+}
+.ProLand-2-head {
+  /* background: #920404; */
+  font-size: 1.05vw;
+}
+.ProLand-2 hr {
+  height: 2px;
+  border: none;
+  background: rgb(255, 255, 255);
+  margin-top: 1.5vw;
+}
+.DESCRIPTION h2 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-top: 4.5vw;
+}
+.DESCRIPTION ul {
+  list-style: none;
+  margin-left: 4.5vw;
+  margin-top: 1.8vw;
+  line-height: 2vw;
+}
+.DESCRIPTION table {
+  margin-left: 4.5vw;
+  margin-top: 1.8vw;
+  line-height: 2vw;
+}
+.DESCRIPTION table td,th{
+  width: 27vw;
+  min-width: 18vw;
+  /* background: red; */
+  font-size: 1.05vw;
+}
+.DESCRIPTION table th{
+  text-align: left;
+}

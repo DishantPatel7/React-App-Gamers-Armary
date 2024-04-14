@@ -1,21 +1,24 @@
 #container3 {
   width: 100%;
   /* position: relative; */
+  color: #eee;
 }
-#cont3-bgimg{
+#cont3-bgimg {
   position: absolute;
   width: 100%;
-  height: 120vh;
-  background: url(../Images/bg-4.webp);
+  height: 130vh;
+  background-image: linear-gradient(to top, #26254e, #eeeeee00, #eeeeee00),
+    url(../Images/BG/bg-14.jpg);
   background-size: cover;
   background-repeat: repeat;
+  /* background: rgb(30, 29, 29); */
   z-index: -1;
 }
-#cont3-data{
-  padding: 5% 7.5%;
+#cont3-data {
+  height: 130vh;
+  padding: 4% 5% 2%;
 }
 #cont3-data h1 {
-  /* color: white; */
   font-size: 3vw;
   font-weight: 600;
 }
@@ -25,10 +28,11 @@
   align-items: center;
   justify-content: space-between;
   /* background-color: red; */
+  padding: 0 4vw;
 }
 #cont3-data .category-item .item {
   width: 28%;
-  height: 80vh;
+  height: 38vw;
 }
 #cont3-data .item-div {
   overflow: hidden;
@@ -36,7 +40,10 @@
   border-radius: 3vw;
 }
 #cont3-data .category-item .item .item-div {
-  box-shadow: 10px 10px 25px 10px rgb(153, 153, 153);
+  box-shadow: 1px 1px 50px 1px #d410c45f;
+}
+#cont3-data .category-item .item .item-div:hover {
+  box-shadow: 1px 1px 50px 10px #d410c45f;
 }
 #cont3-data .category-item .item img {
   object-fit: cover;

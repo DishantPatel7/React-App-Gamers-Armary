@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./login2.css";
+// import "./login2jsForSignup"
 function Login2() {
   return (
     <>

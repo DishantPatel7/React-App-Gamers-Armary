@@ -1,9 +1,9 @@
-.swiper {
+#container2 .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+#container2 .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* background: #fff; */
@@ -14,13 +14,13 @@
   align-items: center;
 }
 
-.swiper-slide img {
+#container2 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination {
+#container2 .swiper-pagination {
   position: absolute;
   margin-top: 150px;
 }
