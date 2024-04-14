@@ -31,9 +31,11 @@ nav {
   animation: NavbarHidden linear forwards;
   animation-timeline: scroll();
   animation-range: 150vh 150vh;
-  opacity: 100%;
 }
 @keyframes NavbarHidden {
+  from{
+    opacity: 100%;
+  }
   to {
     opacity: 0;
   }
