@@ -26,10 +26,11 @@ nav {
   padding: 0 0.5vw;
   font-family: "Poppins", sans-serif;
   /* for making navbarhidden after scroll */
-  transition: all ease-in-out 0.2s;
+  
+  /* transition: all ease-in-out 0.2s;
   animation: NavbarHidden linear forwards;
   animation-timeline: scroll();
-  animation-range: 150vh 150vh;
+  animation-range: 150vh 150vh; */
 }
 @keyframes NavbarHidden {
   to {
