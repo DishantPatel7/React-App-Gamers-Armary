@@ -5,15 +5,17 @@ import Test2 from "./Components/Product/Test2";
 import Head from "./Components/Header/header";
 import Browseby from "./Components/BrowseBy/Browseby";
 
+import { ScrollRestoration } from "react-router-dom";
 const App = () => {
   return (
     <>
+      
       <Homeconts />
       {/* <ProductLanding /> */}
       {/* <Browseby /> */}
       {/* <Test2 /> */}
       {/* <Head /> */}
-
+      <ScrollRestoration/>
     </>
   );
 };

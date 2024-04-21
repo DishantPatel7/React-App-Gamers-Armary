@@ -24,6 +24,10 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "/",
+    element: <App />,
+  },
+  {
     path: "/games",
     element: <Gamepage />,
   },
@@ -67,7 +71,12 @@ const router = createBrowserRouter([
     path: "/Contact Us",
     element: <Cont6 />,
   },
+  {
+    path: "/product/:id",
+    element: <ProductLanding />,
+  },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

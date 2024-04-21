@@ -1,6 +1,6 @@
 import Head from "../Header/header";
 import "./ProductLanding.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import H1 from "../Images/Headphones/H1.webp";
 import H11 from "../Images/Headphones/H11.webp";
 import H12 from "../Images/Headphones/H12.webp";
@@ -9,8 +9,23 @@ import H14 from "../Images/Headphones/H14.webp";
 import H15 from "../Images/Headphones/H15.webp";
 import { Link } from "react-router-dom";
 import Foot from "../Footer/footer";
+import { ScrollRestoration } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
+import { items } from "../BrowseBy/Data";
+
 const ProductLanding = () => {
   const [count, setCount] = useState(1);
+
+  // for filter according to the product
+  const [product, setProduct] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    const filterProduct = items.filter((product) => product.id == id);
+    // console.log(filterProduct)
+    setProduct(filterProduct[0]);
+  }, [id]);
 
   return (
     <>
@@ -19,7 +34,7 @@ const ProductLanding = () => {
         <div className="ProductLanding-content">
           <div id="header">
             <Link to="/React-App-Gamers-Armary">Home</Link>
-            <p>/ Product Name</p>
+            <p>/ {product.name}</p>
           </div>
           <div className="ProLand-1">
             <div className="ProLand-1-L">
@@ -62,7 +77,7 @@ const ProductLanding = () => {
                 {/* <img src={H15} alt="sm-img" /> */}
               </div>
               <div className="ProLand-img">
-                <img src={H1} alt="ProLand-img" id="IDProLand-img" />
+                <img src={product.img} alt="ProLand-img" id="IDProLand-img" />
               </div>
             </div>
             <div className="ProLand-1-R">
@@ -171,6 +186,7 @@ const ProductLanding = () => {
           </div>
         </div>
       </div>
+      <ScrollRestoration />
       <Foot />
     </>
   );
