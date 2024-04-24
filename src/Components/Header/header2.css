@@ -127,7 +127,7 @@ nav li:first-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* transition: all ease-in 2s; */
+  /* transition: all ease-in 1s; */
 }
 .cartName {
   position: relative;

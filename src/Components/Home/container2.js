@@ -21,46 +21,24 @@ import "./swiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 function Cont2() {
-  // let data = [
-  //   {
-  //     img: b1,
-  //     name: "Mach Gaming Chair",
-  //     price: "₹12000",
-  //   },
-  //   {
-  //     img: b2,
-  //     name: "X-2 Wireless",
-  //     price: "₹2500",
-  //   },
-  //   {
-  //     img: b3,
-  //     name: "Headphone XD200",
-  //     price: "₹2399",
-  //   },
-  //   {
-  //     img: b4,
-  //     name: "Sparun Mechanical keyboard",
-  //     price: "₹2000",
-  //   },
-  //   {
-  //     img: b5,
-  //     name: "Raptor",
-  //     price: "₹5099",
-  //   },
-  //   {
-  //     img: b6,
-  //     name: "Wave",
-  //     price: "₹2199",
-  //   },
-  //   {
-  //     img: b7,
-  //     name: "PS5",
-  //     price: "₹35049",
-  //   },
-  // ];
+  let data = [
+    {
+      id: 1,
+      img: b1,
+      name: "Mach Gaming Chair",
+      price: "₹12000",
+    },
+    { id: 1, img: b2, name: "X-2 Wireless", price: "₹2500" },
+    { id: 1, img: b3, name: "Headphone XD200", price: "₹2399" },
+    { id: 1, img: b4, name: "Sparun Mechanical keyboard", price: "₹2000" },
+    { id: 26, img: b5, name: "Raptor", price: "₹5099" },
+    { id: 28, img: b6, name: "Wave", price: "₹2199" },
+    { id: 24, img: b7, name: "Wave Gen RX", price: "₹35049" },
+  ];
   return (
     <>
       <div id="container2">
@@ -107,19 +85,24 @@ function Cont2() {
               },
             }}
           >
-            <SwiperSlide>
-              <div class="slideImg">
-                <img src={b1} alt="" />
-              </div>
-              <div class="slideText">
-                <p>Mach Gaming Chair</p>
-                <p>₹12000</p>
-              </div>
-              <div class="cont2-btn">
-                <button>Add to Cart</button>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            {data.map((test) => (
+              <SwiperSlide>
+                <Link to={`/product/${test.id}`}>
+                  <div class="slideImg">
+                    <img src={test.img} alt="" />
+                  </div>
+                </Link>
+                <div class="slideText">
+                  <p>{test.name}</p>
+                  <p>{test.price}</p>
+                </div>
+                <div class="cont2-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </SwiperSlide>
+            ))}
+
+            {/* <SwiperSlide>
               <div class="slideImg">
                 <img src={b2} alt="" />
               </div>
@@ -191,7 +174,7 @@ function Cont2() {
               <div class="cont2-btn">
                 <button>Add to Cart</button>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

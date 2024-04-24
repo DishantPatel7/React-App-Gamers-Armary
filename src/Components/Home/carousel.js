@@ -7,8 +7,8 @@ import s5 from "../Images/Slider/s5.jpeg";
 import s6 from "../Images/Slider/s6.webp";
 import s7 from "../Images/Slider/s7.webp";
 import s8 from "../Images/Slider/s8.png";
-// import './landing';
-
+import { Link } from "react-router-dom";
+// import "../Javascript/landing";
 
 function Carousel() {
   const item = [
@@ -78,48 +78,55 @@ function Carousel() {
         </div> */}
 
         <div class="thumbnail">
+          
+          <Link to="/games/9">
           <div class="item">
             <img src={s8} alt="" />
             <div class="content">
               <div class="title">Marvel's Spider-Man 2</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
+          <Link to="">
           <div class="item">
             <img src={s3} alt="" />
             <div class="content">
               <div class="title">Fortnite Battle Royale</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
+          <Link to="/games/5">
           <div class="item">
             <img src={s4} alt="" />
             <div class="content">
               <div class="title">Tekken 8</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
+          <Link to="/games/1">
           <div class="item">
             <img src={s5} alt="" />
             <div class="content">
               <div class="title">Helldivers™ 2</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
+          <Link to="">
           <div class="item">
             <img src={s6} alt="" />
             <div class="content">
               <div class="title">Hi-Fi Rush</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
+          <Link to="/games/3">
           <div class="item">
             <img src={s1} alt="" />
             <div class="content">
               <div class="title">Modern Warfare III</div>
               {/* <!-- <div class="des">Description</div> --> */}
             </div>
-          </div>
+          </div></Link>
         </div>
         {/* <!-- arrows --> */}
         <div class="arrows">

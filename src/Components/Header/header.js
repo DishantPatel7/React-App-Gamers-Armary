@@ -3,7 +3,7 @@ import "./header2.css";
 import logo from "../Images/Screenshot_2024-03-31_154600111-removebg-preview.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import H1 from "../Images/Headphones/H1.webp"
+import H1 from "../Images/Headphones/H1.webp";
 
 function Head() {
   function showSlidebar() {
@@ -193,6 +193,7 @@ function Head() {
               </Link>
             </li>
           </ul>
+          {/* making add to cart */}
           <ul id="Cart">
             <div className="cartName">
               <button
@@ -226,13 +227,14 @@ function Head() {
               </div>
               <hr />
               <div className="view-cart-btn">
-                <button>View Cart</button>
+                <Link to="/Cart">
+                  <button>View Cart</button>
+                </Link>
               </div>
             </div>
           </ul>
-          <ul id="search">
-            
-          </ul>
+          {/* <ul id="search">
+          </ul> */}
         </nav>
       </header>
     </>

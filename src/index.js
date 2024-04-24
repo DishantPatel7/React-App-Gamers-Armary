@@ -17,6 +17,7 @@ import Bestsellers from "./Components/BrowseBy/Bestsellers";
 import Consoles from "./Components/BrowseBy/Consoles";
 import Controllers from "./Components/BrowseBy/Controllers";
 import Onsale from "./Components/BrowseBy/Onsale";
+import Cart from "./Components/Cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +75,14 @@ const router = createBrowserRouter([
   {
     path: "/product/:id",
     element: <ProductLanding />,
+  },
+  {
+    path: "/games/:id",
+    element: <Gamelandpage />,
+  },
+  {
+    path: "/Cart",
+    element: <Cart />,
   },
 ]);
 

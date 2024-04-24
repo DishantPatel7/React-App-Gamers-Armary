@@ -1,11 +1,15 @@
 import "./gamelanding.css";
-import React from "react";
+import React, { useEffect } from "react";
 import iarc_18 from "../Images/iarc_18.webp";
 import c1 from "../Images/COD/c1.avif";
 import c2 from "../Images/COD/c2.avif";
 import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
+import s1 from "../Images/Slider/s1.jpeg";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
+
+import { gamesData } from "./GameData";
 
 const Gamelanding = () => {
   let gameData = [
@@ -46,13 +50,27 @@ const Gamelanding = () => {
   ];
   const [count, setCount] = useState(0);
 
+  // for filter according to the product
+  const [games, setGames] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    const filterProduct = gamesData.filter((games) => games.id == id);
+    // console.log(filterProduct)
+    setGames(filterProduct[0]);
+  }, [id]);
+
   return (
     <>
       <div id="Gamelanding">
         <div id="pro1">
+          <div className="pro1-bg-img">
+            <img src={games.img} alt="" />
+          </div>
           <div id="p-content">
             <div id="p-content-L">
-              <h1>Call of Duty: Modern Warfare III</h1>
+              <h1>{games.name}</h1>
+              {/* <h1>Call of Duty: Modern Warfare III</h1> */}
               <p id="p-content-L-p1">Activision</p>
               <p id="p-content-L-p2">
                 4.04 <i class="ri-star-s-fill"></i>

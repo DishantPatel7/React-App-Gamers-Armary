@@ -6,10 +6,12 @@ import Head from "./Components/Header/header";
 import Browseby from "./Components/BrowseBy/Browseby";
 
 import { ScrollRestoration } from "react-router-dom";
+import Cart from "./Components/Cart/Cart";
 const App = () => {
   return (
     <>
       
+      {/* <Cart /> */}
       <Homeconts />
       {/* <ProductLanding /> */}
       {/* <Browseby /> */}

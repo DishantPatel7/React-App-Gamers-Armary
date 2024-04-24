@@ -16,55 +16,29 @@ import { Link } from "react-router-dom";
 function Games() {
   const gameset = [
     {
+      id: 1,
       img: g1,
       name: "Helldivers™",
     },
     {
+      id: 2,
       img: g2,
       name: "Rise of the Ronin",
     },
     {
+      id: 3,
       img: g9,
       name: "Call of Duty: Modern Warfare III",
-      url: "/gamelanding",
     },
-    {
-      img: g3,
-      name: "The Last of Us Part II Remastered",
-    },
-    {
-      img: g4,
-      name: "Tekken 8",
-    },
-    {
-      img: g5,
-      name: "EA SPORTS™ FC 24",
-    },
-    {
-      img: g6,
-      name: "Dragon's Dogma 2",
-    },
-    {
-      img: g7,
-      name: "Final Fantasy XVI",
-    },
-    {
-      img: g8,
-      name: "Marvel's Spider-Man 2",
-    },
-
-    {
-      img: g10,
-      name: "God of War Ragnarök",
-    },
-    {
-      img: g11,
-      name: "Final Fantasy VII Rebirth",
-    },
-    {
-      img: g12,
-      name: "LEGO Fortnite",
-    },
+    { id: 4, img: g3, name: "The Last of Us Part II Remastered" },
+    { id: 5, img: g4, name: "Tekken 8" },
+    { id: 6, img: g5, name: "EA SPORTS™ FC 24" },
+    { id: 7, img: g6, name: "Dragon's Dogma 2" },
+    { id: 8, img: g7, name: "Final Fantasy XVI" },
+    { id: 9, img: g8, name: "Marvel's Spider-Man 2" },
+    { id: 10, img: g10, name: "God of War Ragnarök" },
+    { id: 11, img: g11, name: "Final Fantasy VII Rebirth" },
+    { id: 12, img: g12, name: "LEGO Fortnite" },
   ];
   return (
     <>
@@ -77,10 +51,10 @@ function Games() {
           </div>
         </div>
         <div class="games">
-          {gameset.map((test, index) => (
-            <div class="gs1" key={index}>
-              <Link to={test.url}>
-                <img src={test.img} alt="" /> <p>{test.name}</p>
+          {gameset.map((games) => (
+            <div class="gs1" key={games.id}>
+              <Link to={`/games/${games.id}`}>
+                <img src={games.img} alt="" /> <p>{games.name}</p>
               </Link>
             </div>
           ))}

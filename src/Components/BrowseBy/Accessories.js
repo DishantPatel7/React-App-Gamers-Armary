@@ -18,79 +18,89 @@ import { Link } from "react-router-dom";
 import Head from "../Header/header";
 
 const Accessories = () => {
-  const productsData = [
+  const productsData=[
     {
+      id: 5,
       img: M1,
       name: "Logitech G502 X Lightspeed Plus Wireless RGB Gaming Mouse",
       price: "₹14,000",
     },
     {
+      id: 6,
       img: M2,
       name: "Logitech G502 Lightspeed Wireless Gaming Mouse",
       price: "₹11,095",
     },
     {
+      id: 7,
       img: M3,
       name: "Logitech G304 Lightspeed Wireless Gaming Mouse",
       price: "₹2,299",
     },
     {
+      id: 8,
       img: M4,
       name: "Logitech G PRO Wireless Gaming Mouse",
       price: "₹9,999",
     },
+    { id: 9, img: MP1, name: "FIRESTORM", price: "₹329" },
     {
-      img: MP1,
-      name: "FIRESTORM",
-      price: "₹329",
-    },
-    {
+      id: 10,
       img: K1,
       name: "MAX NINJA 200 WIRELESS GAMING KEYBOARD (MECHANICAL)",
       price: "₹ 3,999.00",
     },
     {
+      id: 11,
       img: K2,
       name: "NITRO PRO WIRED GAMING KEYBOARD (MECHANICAL)",
       price: "₹ 2,499.00",
     },
     {
+      id: 12,
       img: MP2,
       name: "BLAZE XL RGB (SANTANU EDITION)",
       price: "₹ 1,299.00",
     },
     {
+      id: 13,
       img: K3,
       name: "MAX CHROMA WIRED GAMING KEYBOARD (MECHANICAL)",
       price: "₹ 3,799.00",
     },
     {
+      id: 14,
       img: K4,
       name: "MAX NINJA WIRELESS GAMING KEYBOARD (MECHANICAL)",
       price: "₹ 3,699.00",
-    },
+    }, 
     {
+      id: 1,
+      pname: "JET GAMING HEADPHONE",
       img: H1,
       name: "Zebronics Jet Premium Wired Gaming On Ear Headphone with LED Light for earcups",
       price: "₹790",
       url: "/ProductLanding",
     },
     {
+      id: 2,
       img: H2,
       name: "JBL Quantum 100 Wired Over Ear Gaming Headphones with Mic",
       price: "₹2,099",
     },
     {
+      id: 3,
       img: H3,
       name: "Razer BlackShark V2 X - White ",
       price: "₹4,599",
     },
     {
+      id: 4,
       img: H4,
       name: "HyperX Cloud Stinger 2 Core Essential PC Gaming Wired Headset",
       price: "₹3,599",
     },
-  ];
+  ]
   return (
     <>
       <Head />
@@ -122,16 +132,16 @@ const Accessories = () => {
             <h1>Accessories</h1>
             {/* <p>26 Products</p> */}
             <div class="Products-items">
-              {productsData.map((test, index) => (
-                <div class="pro-item-Card" key={index}>
+              {productsData.map((product) => (
+                <div class="pro-item-Card" key={product.id}>
                   <div class="pro-item-Img">
-                    <Link to={test.url}>
-                      <img src={test.img} alt="img" />
+                    <Link to={`/product/${product.id}`}>
+                      <img src={product.img} alt="img" />
                     </Link>
                   </div>
                   <div class="pro-item-Text">
-                    <p>{test.name}</p>
-                    <p>{test.price}</p>
+                    <p>{product.name}</p>
+                    <p>{product.price}</p>
                   </div>
                   <div class="pro-item-Btn">
                     <button>Add to Cart</button>

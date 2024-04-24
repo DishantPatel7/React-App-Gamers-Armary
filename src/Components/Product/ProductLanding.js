@@ -39,41 +39,11 @@ const ProductLanding = () => {
           <div className="ProLand-1">
             <div className="ProLand-1-L">
               <div className="ProLand-sm-img">
-                <img
-                  src={H1}
-                  alt="sm-img"
-                  onClick={() => {
-                    document.getElementById("IDProLand-img").style.src = "H1";
-                  }}
-                />
-                <img
-                  src={H11}
-                  alt="sm-img"
-                  onClick={() =>
-                    (document.getElementById("IDProLand-img").style.src = "H11")
-                  }
-                />
-                <img
-                  src={H12}
-                  alt="sm-img"
-                  onClick={() => {
-                    document.getElementById("IDProLand-img").src = { H12 };
-                  }}
-                />
-                <img
-                  src={H13}
-                  alt="sm-img"
-                  onClick={() => {
-                    document.getElementById("IDProLand-img").src = { H13 };
-                  }}
-                />
-                <img
-                  src={H14}
-                  alt="sm-img"
-                  onClick={() => {
-                    document.getElementById("IDProLand-img").src = { H14 };
-                  }}
-                />
+                <img src={H1} alt="sm-img" />
+                <img src={H11} alt="sm-img" />
+                <img src={H12} alt="sm-img" />
+                <img src={H13} alt="sm-img" />
+                <img src={H14} alt="sm-img" />
                 {/* <img src={H15} alt="sm-img" /> */}
               </div>
               <div className="ProLand-img">
@@ -81,10 +51,12 @@ const ProductLanding = () => {
               </div>
             </div>
             <div className="ProLand-1-R">
-              <h1>JET GAMING HEADPHONE</h1>
+              <h1>{product.name}</h1>
+              {/* <h1>JET GAMING HEADPHONE</h1> */}
 
               <h3>
-                ₹ 799.00<span>₹ 1,699.00</span>
+                {product.price}
+                <span>₹ 1,699.00</span>
               </h3>
               <hr />
               <p>40mm Neodymium Drivers | 2 Mtr Braided Cable | Flexible Mic</p>
