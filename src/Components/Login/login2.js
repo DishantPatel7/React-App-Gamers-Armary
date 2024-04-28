@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import "./login2.css";
-// import "./login2jsForSignup"
+// import "./login2jsForSignup";
 function Login2() {
   return (
     <>
-    <div id="homeBTN"><Link to="/React-App-Gamers-Armary">Home</Link></div>
+      <div id="homeBTN">
+        <Link to="/React-App-Gamers-Armary">Home</Link>
+      </div>
       <div id="login21">
         <div id="login21-content">
           <div class="login2" id="login2">

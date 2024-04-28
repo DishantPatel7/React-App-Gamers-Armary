@@ -44,7 +44,7 @@ function Cont2() {
       <div id="container2">
         <div class="cont-slider-text">
           <h1>BEST SELLERS</h1>
-          <button>view all</button>
+          <button><Link to="/Best-Sellers">view all</Link></button>
         </div>
         <div id="bestseller">
           <Swiper

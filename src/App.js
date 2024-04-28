@@ -17,7 +17,7 @@ const App = () => {
       {/* <Browseby /> */}
       {/* <Test2 /> */}
       {/* <Head /> */}
-      <ScrollRestoration/>
+      {/* <ScrollRestoration/> */}
     </>
   );
 };

@@ -1,18 +1,17 @@
 import "./gamelanding.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import iarc_18 from "../Images/iarc_18.webp";
 import c1 from "../Images/COD/c1.avif";
 import c2 from "../Images/COD/c2.avif";
 import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
-import s1 from "../Images/Slider/s1.jpeg";
-import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { ScrollRestoration, useParams } from "react-router-dom";
+
 
 import { gamesData } from "./GameData";
 
 const Gamelanding = () => {
-  let gameData = [
+  let gameDataIN = [
     {
       img: c1,
       gName: "Call of Duty®: Warzone™",
@@ -412,6 +411,7 @@ const Gamelanding = () => {
           </div>
         </div>
       </div>
+      <ScrollRestoration/>
     </>
   );
 };

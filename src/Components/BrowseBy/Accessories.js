@@ -14,7 +14,7 @@ import K2 from "../Images/KeyBoards/K2.webp";
 import K3 from "../Images/KeyBoards/K3.webp";
 import K4 from "../Images/KeyBoards/K4.webp";
 
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import Head from "../Header/header";
 
 const Accessories = () => {
@@ -152,6 +152,7 @@ const Accessories = () => {
           </div>
         </div>
       </div>
+      <ScrollRestoration />
     </>
   );
 };

@@ -1,12 +1,10 @@
 import Head from "../Header/header";
 import "./ProductLanding.css";
 import React, { useEffect, useState } from "react";
-import H1 from "../Images/Headphones/H1.webp";
 import H11 from "../Images/Headphones/H11.webp";
 import H12 from "../Images/Headphones/H12.webp";
 import H13 from "../Images/Headphones/H13.webp";
 import H14 from "../Images/Headphones/H14.webp";
-import H15 from "../Images/Headphones/H15.webp";
 import { Link } from "react-router-dom";
 import Foot from "../Footer/footer";
 import { ScrollRestoration } from "react-router-dom";
@@ -39,11 +37,11 @@ const ProductLanding = () => {
           <div className="ProLand-1">
             <div className="ProLand-1-L">
               <div className="ProLand-sm-img">
-                <img src={H1} alt="sm-img" />
-                <img src={H11} alt="sm-img" />
-                <img src={H12} alt="sm-img" />
-                <img src={H13} alt="sm-img" />
-                <img src={H14} alt="sm-img" />
+                <img src={product.img} alt="sm-img" />
+                <img src={product.img2} alt="sm-img" />
+                <img src={product.img3} alt="sm-img" />
+                <img src={product.img4} alt="sm-img" />
+                <img src={product.img5} alt="sm-img" />
                 {/* <img src={H15} alt="sm-img" /> */}
               </div>
               <div className="ProLand-img">

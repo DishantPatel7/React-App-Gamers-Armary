@@ -7,7 +7,7 @@ import b5 from "../Images/Best seller/b5.webp";
 import b6 from "../Images/Best seller/b6.webp";
 import b7 from "../Images/Best seller/b7.webp";
 import Head from "../Header/header";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const Bestsellers = () => {
   const productsData = [
@@ -102,6 +102,7 @@ const Bestsellers = () => {
           {/* <div className="Products-R"><Test/></div> */}
         </div>
       </div>
+      <ScrollRestoration />
     </>
   );
 };

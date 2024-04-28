@@ -1,10 +1,10 @@
 import "./carousel.css";
 import s1 from "../Images/Slider/s1.jpeg";
 import s2 from "../Images/Slider/s2.webp";
-import s3 from "../Images/Slider/s3.webp";
+import s3 from "../Images/Games/gMain/gM2.png";
 import s4 from "../Images/Slider/s4.jpeg";
 import s5 from "../Images/Slider/s5.jpeg";
-import s6 from "../Images/Slider/s6.webp";
+import s6 from "../Images/Games/gMain/gM5.png";
 import s7 from "../Images/Slider/s7.webp";
 import s8 from "../Images/Slider/s8.png";
 import { Link } from "react-router-dom";
@@ -24,8 +24,8 @@ function Carousel() {
     },
     {
       img: s3,
-      topic: "Fortnite Battle Royale",
-      des: "Create, play and battle with friends for free in Fortnite Battle Royale. Be the last player standing in Battle Royale and Zero Build, experience a concert or live event, or discover over a million creator-made games, including racing, parkour, zombie survival and more.",
+      topic: "Rise of the Ronin",
+      des: "Embark on an epic journey across war-torn 19th-century Japan in this combat-focused open-world action RPG from Team NINJA, the veteran studio behind Nioh and NINJA GAIDEN.",
     },
     {
       img: s4,
@@ -39,8 +39,8 @@ function Carousel() {
     },
     {
       img: s6,
-      topic: "Hi-Fi Rush",
-      des: "Considered a defect by an evil tech megacorp due to his heart being fused to a music player, Chai fights his way to freedom by getting into the groove.",
+      topic: "EA SPORTS™ FC 24",
+      des: "EA SPORTS FC™ 24 marks the beginning of the future of football. Built on innovation and authenticity, feel closer to the game in the most true-to-football experience yet with the best players from the biggest clubs, leagues and competitions around the globe.",
     },
   ];
   return (
@@ -78,55 +78,61 @@ function Carousel() {
         </div> */}
 
         <div class="thumbnail">
-          
           <Link to="/games/9">
-          <div class="item">
-            <img src={s8} alt="" />
-            <div class="content">
-              <div class="title">Marvel's Spider-Man 2</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+            <div class="item">
+              <img src={s8} alt="" />
+              <div class="content">
+                <div class="title">Marvel's Spider-Man 2</div>
+                {/* <div class="des">Description</div> */}
+              </div>
             </div>
-          </div></Link>
-          <Link to="">
-          <div class="item">
-            <img src={s3} alt="" />
-            <div class="content">
-              <div class="title">Fortnite Battle Royale</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+          </Link>
+          {/* <Thumbnail sc={s8} title="sp2" lk="/games/9" /> */}
+          <Link to="/games/2">
+            <div class="item">
+              <img src={s3} alt="" />
+              <div class="content">
+                <div class="title">Rise of the Ronin</div>
+                {/* <!-- <div class="des">Description</div> --> */}
+              </div>
             </div>
-          </div></Link>
+          </Link>
           <Link to="/games/5">
-          <div class="item">
-            <img src={s4} alt="" />
-            <div class="content">
-              <div class="title">Tekken 8</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+            <div class="item">
+              <img src={s4} alt="" />
+              <div class="content">
+                <div class="title">Tekken 8</div>
+                {/* <!-- <div class="des">Description</div> --> */}
+              </div>
             </div>
-          </div></Link>
+          </Link>
           <Link to="/games/1">
-          <div class="item">
-            <img src={s5} alt="" />
-            <div class="content">
-              <div class="title">Helldivers™ 2</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+            <div class="item">
+              <img src={s5} alt="" />
+              <div class="content">
+                <div class="title">Helldivers™ 2</div>
+                {/* <!-- <div class="des">Description</div> --> */}
+              </div>
             </div>
-          </div></Link>
-          <Link to="">
-          <div class="item">
-            <img src={s6} alt="" />
-            <div class="content">
-              <div class="title">Hi-Fi Rush</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+          </Link>
+          <Link to="/games/6">
+            <div class="item">
+              <img src={s6} alt="" />
+              <div class="content">
+                <div class="title">EA SPORTS™ FC 24</div>
+                {/* <!-- <div class="des">Description</div> --> */}
+              </div>
             </div>
-          </div></Link>
+          </Link>
           <Link to="/games/3">
-          <div class="item">
-            <img src={s1} alt="" />
-            <div class="content">
-              <div class="title">Modern Warfare III</div>
-              {/* <!-- <div class="des">Description</div> --> */}
+            <div class="item">
+              <img src={s1} alt="" />
+              <div class="content">
+                <div class="title">Modern Warfare III</div>
+                {/* <!-- <div class="des">Description</div> --> */}
+              </div>
             </div>
-          </div></Link>
+          </Link>
         </div>
         {/* <!-- arrows --> */}
         <div class="arrows">
@@ -143,3 +149,17 @@ function Carousel() {
   );
 }
 export default Carousel;
+
+// function Thumbnail(props) {
+//   return (
+//     <Link to="/games/9">
+//       <div class="item">
+//         <img src={props.sc} alt="" />
+//         <div class="content">
+//           <div class="title">{props.t}</div>
+//           {/* <!-- <div class="des">Description</div> --> */}
+//         </div>
+//       </div>
+//     </Link>
+//   );
+// }

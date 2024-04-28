@@ -5,7 +5,7 @@ import X3 from "../Images/Controller/X3.webp";
 import X4 from "../Images/Controller/X4.webp";
 
 import Head from "../Header/header";
-import { Link } from "react-router-dom";
+import { Link,ScrollRestoration } from "react-router-dom";
 
 const Controllers = () => {
   const productsData = [
@@ -84,6 +84,7 @@ const Controllers = () => {
           {/* <div className="Products-R"><Test/></div> */}
         </div>
       </div>
+      <ScrollRestoration />
     </>
   );
 };

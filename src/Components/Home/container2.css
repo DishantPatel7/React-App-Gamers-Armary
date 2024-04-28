@@ -34,7 +34,10 @@
   border-radius: 2vw;
   padding: 0.1vw 1.2vw;
   background-color: white;
-  border: 4px solid #f1683a;
+  border: 4px solid #8800ff;
+}
+#container2 .cont-slider-text button a {
+  text-decoration: none;
 }
 #bestseller {
   display: flex;
@@ -58,6 +61,7 @@
 }
 #bestseller .slideImg img:hover {
   transform: scale(1.2);
+  /* transform: scale(1.2) rotateY(360deg); */
 }
 #bestseller .slideText {
   padding-top: 1.5vh;

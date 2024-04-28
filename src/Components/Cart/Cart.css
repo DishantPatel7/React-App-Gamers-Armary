@@ -1,202 +1,214 @@
 .Cartpage {
-    margin: 2vw 3vw 0;
-  }
-  .Cartpage-details {
-    box-shadow: 1px 1px 15px 1px black;
-    display: flex;
-    margin: 1vw 0;
-    /* background-color: red; */
-  }
-  .ShoppingCart {
-    width: 75%;
-    padding: 5vw;
-  }
-  .ShoppingCart-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid gray;
-    padding-bottom: 2vw;
-    /* background: red; */
-  }
-  .ShoppingCart-header h1 {
-    font-weight: 600;
-    font-size: 2vw;
-  }
-  .ShoppingCart-header h2 {
-    font-weight: 600;
-    font-size: 1.7vw;
-  }
-  .PRODUCT-DETAILS-head {
-    display: flex;
-    margin-top: 3vw;
-    margin-bottom: 1.5vw;
-    /* background: red; */
-  }
-  .PRODUCT-DETAILS-head h3:first-child {
-    width: 40%;
-    text-align: left;
-  }
-  .PRODUCT-DETAILS-head h3 {
-    width: 20%;
-    font-weight: 500;
-    color: rgb(59, 59, 59);
-    font-size: 0.85vw;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .PRODUCT-DETAILS {
-    display: flex;
-    align-items: center;
-    /* margin: 0 -2.5vw; */
-    /* padding: 1.2vw 1vw;
+  padding: 2vw 5vw 0;
+  /* margin: 2vw 5vw 0; */
+  padding-top: 6vw;
+  background: #000;
+}
+.Cartpage button{
+  border: none;
+}
+.Cartpage-details {
+  /* box-shadow: 1px 1px 15px 1px black; */
+  display: flex;
+  /* margin: 1vw 0; */
+}
+.ShoppingCart {
+  width: 75%;
+  padding: 5vw;
+  background-color:#241441 ;
+  color: #eee;
+}
+.ShoppingCart-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  padding-bottom: 2vw;
+  /* background: red; */
+}
+.ShoppingCart-header h1 {
+  font-weight: 600;
+  font-size: 2vw;
+}
+.ShoppingCart-header h2 {
+  font-weight: 600;
+  font-size: 1.7vw;
+}
+.PRODUCT-DETAILS-head {
+  display: flex;
+  margin-top: 3vw;
+  margin-bottom: 1.5vw;
+  /* background: red; */
+}
+.PRODUCT-DETAILS-head h3:first-child {
+  width: 40%;
+  text-align: left;
+}
+.PRODUCT-DETAILS-head h3 {
+  width: 20%;
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.PRODUCT-DETAILS {
+  display: flex;
+  align-items: center;
+  /* margin: 0 -2.5vw; */
+  /* padding: 1.2vw 1vw;
     background: rgb(108, 62, 62); */
-  }
-  .PRODUCT-DETAILS:hover {
-    background: #eee;
-  }
-  .items-Details {
-    display: flex;
-    width: 40%;
-  }
-  .PRODUCT-DETAILS .item-img {
-    width: 5vw;
-    height: 6vw;
-    /* background: red; */
-  }
-  .PRODUCT-DETAILS .item-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .PRODUCT-DETAILS .item-Data {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1.2vw;
-  }
-  .PRODUCT-DETAILS .item-Data span:first-child {
-    font-size: 1vw;
-    font-weight: 700;
-  }
-  .PRODUCT-DETAILS .item-Data span:nth-child(2) {
-    color: red;
-    font-size: 0.8vw;
-  }
-  .PRODUCT-DETAILS .item-Data a {
-    font-weight: 500;
-    color: rgb(108, 108, 108);
-    font-size: 0.8vw;
-  }
-  .PRODUCT-DETAILS .item-Data a:hover {
-    color: red;
-  }
-  .increase-btn {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-  }
-  .increase-btn input {
-    margin: 0 0.5vw;
-    text-align: center;
-    width: 2vw;
-  }
-  .PRODUCT-DETAILS .Span {
-    text-align: center;
-    width: 20%;
-    font-weight: 600;
-    font-size: 1vw;
-    /* background: red; */
-    padding-left: 1.5vw;
-  }
-  .Continue {
-    display: flex;
-    font-weight: 600;
-    color: rgb(104, 43, 226);
-    font-size: 0.8vw;
-    margin-top: 3.5vw;
-  }
-  .Continue svg {
-    margin-right: 0.7vw;
-    color: rgb(104, 43, 226);
-    width: 1vw;
-    fill: currentColor;
-  }
-  #summary {
-    width: 25%;
-    padding: 2.6vw 2.1vw;
-    background: #eee;
-  }
-  #summary h1 {
-    font-weight: 600;
-    padding-bottom: 2.2vw;
-    font-size: 1.6vw;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.45);
-  }
-  #summary .ITEMS {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.7vw;
-    margin-bottom: 1.3vw;
-  }
-  #summary .ITEMS span {
-    font-weight: 500;
-    font-size: 0.95vw;
-  }
-  #summary .Shipping label {
-    font-size: 1.1vw;
-    display: inline-block;
-    font-weight: 500;
-    margin-bottom: 0.8vw;
-  }
-  #summary .Shipping select {
-    display: block;
-    padding: 0.5vw;
-    color: gray;
-    font-size: 0.95vw;
-    width: 100%;
-  }
-  #summary .PROMO-CODE {
-    padding: 2.7vw 0;
-  }
-  #summary .PROMO-CODE label {
-    font-size: 0.95vw;
-    display: inline-block;
-    font-weight: 500;
-    margin-bottom: 0.8vw;
-  }
-  #summary .PROMO-CODE input {
-    padding: 0.5vw;
-    width: 100%;
-    font-size: 0.95vw;
-  }
-  #summary button {
-    background: red;
-    color: #eee;
-    font-size: 0.9vw;
-    padding: 0.7vw 1.3vw;
-  }
-  #summary button:hover {
-    background: rgb(222, 15, 15);
-  }
-  #summary .Total-cost {
-    border-top: 1px solid rgba(128, 128, 128, 0.45);
-    margin-top: 2.2vw;
-  }
-  #summary .Total-cost .cost {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.95vw;
-    font-weight: 500;
-    padding: 1.5vw 0;
-  }
-  #summary .Total-cost button {
-    font-size: .9vw;
-    font-weight: 500;
-    padding: .8vw 0;
-    background: #6366f1;
-    width: 100%;
-    color: #eee;
-  }
-  #summary .Total-cost button:hover {
-    background: #4f46e5;
-  }
-  
+}
+.PRODUCT-DETAILS:hover {
+  background: #eee;
+}
+.items-Details {
+  display: flex;
+  width: 40%;
+}
+.PRODUCT-DETAILS .item-img {
+  width: 5vw;
+  height: 6vw;
+  /* background: red; */
+}
+.PRODUCT-DETAILS .item-img img {
+  width: 100%;
+  height: 100%;
+}
+.PRODUCT-DETAILS .item-Data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.2vw;
+}
+.PRODUCT-DETAILS .item-Data a {
+  text-decoration: none;
+}
+.PRODUCT-DETAILS .item-Data span:first-child {
+  font-size: 1vw;
+  font-weight: 700;
+}
+.PRODUCT-DETAILS .item-Data span:nth-child(2) {
+  color: red;
+  font-size: 0.8vw;
+}
+.PRODUCT-DETAILS .item-Data a {
+  font-weight: 500;
+  color: rgb(108, 108, 108);
+  font-size: 0.8vw;
+}
+.PRODUCT-DETAILS .item-Data a:hover {
+  color: red;
+}
+.increase-btn {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.increase-btn input {
+  margin: 0 0.5vw;
+  text-align: center;
+  width: 2vw;
+}
+.PRODUCT-DETAILS .Span {
+  text-align: center;
+  width: 20%;
+  font-weight: 600;
+  font-size: 1vw;
+  /* background: red; */
+  padding-left: 1.5vw;
+}
+.Continue {
+  display: flex;
+  font-weight: 600;
+  color: rgb(104, 43, 226);
+  font-size: 0.8vw;
+  margin-top: 3.5vw;
+  text-decoration: none;
+}
+.Continue svg {
+  margin-right: 0.7vw;
+  color: rgb(104, 43, 226);
+  width: 1vw;
+  fill: currentColor;
+}
+#summary {
+  width: 25%;
+  padding: 2.6vw 2.1vw;
+  background: #eee;
+}
+#summary h1 {
+  font-weight: 600;
+  padding-bottom: 2.2vw;
+  font-size: 1.6vw;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+}
+#summary .ITEMS {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.7vw;
+  margin-bottom: 1.3vw;
+}
+#summary .ITEMS span {
+  font-weight: 500;
+  font-size: 0.95vw;
+}
+#summary .Shipping label {
+  font-size: 1.1vw;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0.8vw;
+}
+#summary .Shipping select {
+  display: block;
+  padding: 0.5vw;
+  color: gray;
+  font-size: 0.95vw;
+  width: 100%;
+  border: none;
+}
+#summary .PROMO-CODE {
+  padding: 2.7vw 0;
+}
+#summary .PROMO-CODE label {
+  font-size: 0.95vw;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0.8vw;
+}
+#summary .PROMO-CODE input {
+  border: none;
+  padding: 0.5vw;
+  width: 100%;
+  font-size: 0.95vw;
+}
+#summary button {
+  background: red;
+  color: #eee;
+  font-size: 0.9vw;
+  padding: 0.7vw 1.3vw;
+}
+#summary button:hover {
+  background: rgb(222, 15, 15);
+}
+#summary .Total-cost {
+  border-top: 1px solid rgba(128, 128, 128, 0.45);
+  margin-top: 2.2vw;
+}
+#summary .Total-cost .cost {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95vw;
+  font-weight: 500;
+  padding: 1.5vw 0;
+}
+#summary .Total-cost button {
+  font-size: 0.9vw;
+  font-weight: 500;
+  padding: 0.8vw 0;
+  background: #6366f1;
+  width: 100%;
+  color: #eee;
+}
+#summary .Total-cost button:hover {
+  background: #4f46e5;
+}

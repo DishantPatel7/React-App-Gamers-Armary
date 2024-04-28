@@ -20,7 +20,7 @@
   height: 100vh;
   position: absolute;
   z-index: -5;
-  background: greenyellow;
+  /* background: greenyellow; */
 }
 #pro1 .pro1-bg-img img{
   width: 100%;
