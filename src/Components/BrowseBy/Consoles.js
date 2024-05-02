@@ -2,7 +2,7 @@ import React from "react";
 import Head from "../Header/header";
 import { Link ,ScrollRestoration} from "react-router-dom";
 import CO1 from "../Images/console/CO1.webp";
-import CO2 from "../Images/console/CO2.webp";
+import CO2 from "../Images/console/CO2.jpg";
 import CO3 from "../Images/console/CO3.webp";
 import CO4 from "../Images/console/CO4.webp";
 

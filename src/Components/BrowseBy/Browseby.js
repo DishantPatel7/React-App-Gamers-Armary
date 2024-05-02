@@ -60,7 +60,7 @@ const Browseby = () => {
           {/* <div className="Products-R"><Test/></div> */}
         </div>
       </div>
-      <ScrollRestoration />
+      {/* <ScrollRestoration /> */}
     </>
   );
 };

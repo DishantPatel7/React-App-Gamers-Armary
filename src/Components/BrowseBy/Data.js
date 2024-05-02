@@ -3,7 +3,6 @@ import C11 from "../Images/Chairs/C11.jpg";
 import C12 from "../Images/Chairs/C12.jpg";
 import C13 from "../Images/Chairs/C13.jpg";
 import C14 from "../Images/Chairs/C14.jpg";
-
 import C2 from "../Images/Chairs/C2.jpg";
 import C21 from "../Images/Chairs/C21.jpg";
 import C22 from "../Images/Chairs/C22.jpg";
@@ -102,14 +101,41 @@ import K41 from "../Images/KeyBoards/K41.webp";
 import K42 from "../Images/KeyBoards/K42.webp";
 import K43 from "../Images/KeyBoards/K43.webp";
 import K44 from "../Images/KeyBoards/K44.webp";
-import CO1 from "../Images/console/CO1.webp";
-import CO2 from "../Images/console/CO2.webp";
+// import CO1 from "../Images/console/CO1.webp";
+import CO2 from "../Images/console/CO2.jpg";
+import CO21 from "../Images/console/CO21.jpg";
+import CO22 from "../Images/console/CO22.jpg";
+import CO23 from "../Images/console/CO23.jpg";
+import CO24 from "../Images/console/CO24.jpg";
 import CO3 from "../Images/console/CO3.webp";
-import CO4 from "../Images/console/CO4.webp";
-import X1 from "../Images/Controller/X1.webp";
-import X2 from "../Images/Controller/X2.webp";
-import X3 from "../Images/Controller/X3.webp";
-import X4 from "../Images/Controller/X4.webp";
+
+import CO4 from "../Images/console/CO4.jpg";
+import CO41 from "../Images/console/CO41.jpg";
+import CO42 from "../Images/console/CO42.jpg";
+import CO43 from "../Images/console/CO43.webp";
+import CO44 from "../Images/console/CO44.png";
+
+//controllers
+import X1 from "../Images/Controller/X1.jpg";
+import X11 from "../Images/Controller/X11.jpg";
+import X12 from "../Images/Controller/X12.jpg";
+import X13 from "../Images/Controller/X13.jpg";
+import X14 from "../Images/Controller/X14.jpg";
+import X2 from "../Images/Controller/X2.jpg";
+import X21 from "../Images/Controller/X21.jpg";
+import X22 from "../Images/Controller/X22.jpg";
+import X23 from "../Images/Controller/X23.jpg";
+import X24 from "../Images/Controller/X24.jpg";
+import X3 from "../Images/Controller/X3.jpg";
+import X31 from "../Images/Controller/X31.jpg";
+import X32 from "../Images/Controller/X32.jpg";
+import X33 from "../Images/Controller/X33.jpg";
+import X34 from "../Images/Controller/X34.jpg";
+import X4 from "../Images/Controller/X4.jpg";
+import X41 from "../Images/Controller/X41.jpg";
+import X42 from "../Images/Controller/X42.jpg";
+import X43 from "../Images/Controller/X43.jpg";
+import X44 from "../Images/Controller/X44.jpg";
 
 export const items = [
   {
@@ -313,12 +339,66 @@ export const items = [
     name: "Green Soul® Crest Premium High Back/Fiction Multi-Functional Ergonomic Gaming Chair ",
     price: "₹9,999",
   },
-  { id: 21, img: CO1, name: "Gameflow Black", price: "₹35,000" },
-  { id: 22, img: CO2, name: "Playbox Gold Edition", price: "₹39,999" },
+  // { id: 21, img: CO1, name: "Gameflow Black", price: "₹35,000" },
+  {
+    id: 22,
+    img: CO2,
+    img2: CO21,
+    img3: CO22,
+    img4: CO23,
+    img5: CO24,
+    name: "Xbox Series X",
+    price: "₹49,185 ",
+  },
   { id: 23, img: CO3, name: "Veritas VR Set", price: "₹12,599" },
-  { id: 24, img: CO4, name: "Wave Gen RX", price: "₹35,049" },
-  { id: 25, img: X1, name: "Ghost", price: "₹1299" },
-  { id: 26, img: X2, name: "Raptor", price: "₹5099" },
-  { id: 27, img: X3, name: "Fint", price: "₹1199" },
-  { id: 28, img: X4, name: "Wave", price: "₹2199" },
+  {
+    id: 24,
+    img: CO4,
+    img2: CO41,
+    img3: CO42,
+    img4: CO43,
+    img5: CO44,
+    name: "PS5",
+    price: "₹45,049",
+  },
+  {
+    id: 25,
+    img: X1,
+    img2: X11,
+    img3: X12,
+    img4: X13,
+    img5: X14,
+    name: "Ghost",
+    price: "₹1299",
+  },
+  {
+    id: 26,
+    img: X2,
+    img2: X21,
+    img3: X22,
+    img4: X23,
+    img5: X24,
+    name: "Raptor",
+    price: "₹5099",
+  },
+  {
+    id: 27,
+    img: X3,
+    img2: X31,
+    img3: X32,
+    img4: X33,
+    img5: X34,
+    name: "Fint",
+    price: "₹1199",
+  },
+  {
+    id: 28,
+    img: X4,
+    img2: X41,
+    img3: X42,
+    img4: X43,
+    img5: X44,
+    name: "Wave",
+    price: "₹2199",
+  },
 ];

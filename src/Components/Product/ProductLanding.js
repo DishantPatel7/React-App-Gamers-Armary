@@ -67,10 +67,10 @@ const ProductLanding = () => {
                 <button onClick={() => setCount((c) => c + 1)}>+</button>
               </div>
               <div className="btn-Add-Buy">
-                <Link to="/Browseby">
+                <Link to="./">
                   <button>ADD TO CART</button>
                 </Link>
-                <Link to="/Browseby">
+                <Link to="./">
                   <button>BUY IT NOW</button>
                 </Link>
               </div>

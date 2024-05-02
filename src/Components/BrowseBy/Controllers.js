@@ -1,8 +1,8 @@
 import React from "react";
-import X1 from "../Images/Controller/X1.webp";
-import X2 from "../Images/Controller/X2.webp";
-import X3 from "../Images/Controller/X3.webp";
-import X4 from "../Images/Controller/X4.webp";
+import X1 from "../Images/Controller/X1.jpg";
+import X2 from "../Images/Controller/X2.jpg";
+import X3 from "../Images/Controller/X3.jpg";
+import X4 from "../Images/Controller/X4.jpg";
 
 import Head from "../Header/header";
 import { Link,ScrollRestoration } from "react-router-dom";
