@@ -7,10 +7,11 @@ import c3 from "../Images/COD/c3.avif";
 import c4 from "../Images/COD/c4.webp";
 import { ScrollRestoration, useParams } from "react-router-dom";
 
-
+import { useCart } from "../Context/CartContext";
 import { gamesData } from "./GameData";
 
 const Gamelanding = () => {
+  const { addToCart } = useCart();
   let gameDataIN = [
     {
       img: c1,
@@ -64,7 +65,7 @@ const Gamelanding = () => {
       <div id="Gamelanding">
         <div id="pro1">
           <div className="pro1-bg-img">
-            <img src={games.img} alt="" />
+            <img src={games.imgB} alt="" />
           </div>
           <div id="p-content">
             <div id="p-content-L">
@@ -79,13 +80,14 @@ const Gamelanding = () => {
                 <i class="ri-star-s-line"></i> 300.3K
               </p>
               <h2>
-                Rs 3,639 <span> Rs 5,599</span>
+                {games.price} 
+                {/* <span> Rs 5,599</span> */}
               </h2>
               <p id="p-content-L-p3">
-                Save 35% <span>Offer ends soon..</span>
+                {/* Save 35% <span>Offer ends soon..</span> */}
               </p>
               <div id="p-content-L-btn">
-                <button>Add to Cart</button>
+                <button onClick={() => addToCart(games)}>Add to Cart</button>
                 <button
                   id="like"
                   onClick={() => {
@@ -135,11 +137,11 @@ const Gamelanding = () => {
         <div id="pro2">
           <div id="pro2-content">
             <h1>
-              Buy Call of Duty: Modern Warfare III on Gamer's Armary Store
+              Buy {games.name} on Gamer's Armary Store
             </h1>
-            <h1>Editions:</h1>
-            <div class="edition-div">
-              {/* {gameData.map((data, index) => (
+            {/* <h1>Editions:</h1> */}
+            {/* <div class="edition-div">
+              {gameData.map((data, index) => (
                 <div class="edition" key={index}>
                   <div class="edition-img">
                     <img src={data.img} alt="" />
@@ -179,7 +181,7 @@ const Gamelanding = () => {
                     </div>
                   </div>
                 </div>
-              ))} */}
+              ))}
               <div class="edition">
                 <div class="edition-img">
                   <img src={c1} alt="" />
@@ -298,7 +300,7 @@ const Gamelanding = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div id="pro3">
@@ -411,7 +413,7 @@ const Gamelanding = () => {
           </div>
         </div>
       </div>
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
   );
 };

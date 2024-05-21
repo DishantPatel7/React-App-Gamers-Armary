@@ -19,6 +19,9 @@ import Controllers from "./Components/BrowseBy/Controllers";
 import Onsale from "./Components/BrowseBy/Onsale";
 import Cart from "./Components/Cart/Cart";
 
+import { CartProvider } from "./Components/Context/CartContext";
+import AddToCart from "./Components/Addtocart/AddToCart";
+
 const router = createBrowserRouter([
   {
     path: "/React-App-Gamers-Armary",
@@ -84,13 +87,19 @@ const router = createBrowserRouter([
     path: "/Cart",
     element: <Cart />,
   },
+  {
+    path: "/AddToCart",
+    element: <AddToCart />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );
 

@@ -28,6 +28,7 @@ import C61 from "../Images/Chairs/C61.jpg";
 import C62 from "../Images/Chairs/C62.jpg";
 import C63 from "../Images/Chairs/C63.jpg";
 import C64 from "../Images/Chairs/C64.jpg";
+import C7 from "../Images/Best seller/b1.webp";
 //headPhones
 import H1 from "../Images/Headphones/H1.webp";
 import H11 from "../Images/Headphones/H11.webp";
@@ -101,7 +102,7 @@ import K41 from "../Images/KeyBoards/K41.webp";
 import K42 from "../Images/KeyBoards/K42.webp";
 import K43 from "../Images/KeyBoards/K43.webp";
 import K44 from "../Images/KeyBoards/K44.webp";
-// import CO1 from "../Images/console/CO1.webp";
+import CO1 from "../Images/console/CO1.webp";
 import CO2 from "../Images/console/CO2.jpg";
 import CO21 from "../Images/console/CO21.jpg";
 import CO22 from "../Images/console/CO22.jpg";
@@ -146,6 +147,7 @@ export const items = [
     img3: H12,
     img4: H13,
     img5: H14,
+    img11:[H11, H12, H13, H14],
     name: "Zebronics Jet Premium Wired Gaming On Ear Headphone with LED Light for earcups",
     price: "₹790",
   },
@@ -278,6 +280,12 @@ export const items = [
     img5: K44,
     name: "MAX NINJA WIRELESS GAMING KEYBOARD (MECHANICAL)",
     price: "₹ 3,699.00",
+  },
+  {
+    id:29,
+    img: C7,
+    name: "Mach Gaming Chair",
+    price: "₹12000",
   },
   {
     id: 15,

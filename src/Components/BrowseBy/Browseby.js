@@ -4,8 +4,10 @@ import Head from "../Header/header";
 import { Link } from "react-router-dom";
 import { ScrollRestoration } from "react-router-dom";
 import { items } from "./Data";
+import { useCart } from "../Context/CartContext";
 
 const Browseby = () => {
+  const { addToCart } = useCart();
   return (
     <>
       <Head />
@@ -50,7 +52,7 @@ const Browseby = () => {
                     <p>{product.price}</p>
                   </div>
                   <div class="pro-item-Btn">
-                    <button>Add to Cart</button>
+                    <button onClick={() => addToCart(product)}>Add to Cart</button>
                   </div>
                 </div>
               ))}

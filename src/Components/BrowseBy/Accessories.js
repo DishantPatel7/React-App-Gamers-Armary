@@ -17,7 +17,11 @@ import K4 from "../Images/KeyBoards/K4.webp";
 import { Link, ScrollRestoration } from "react-router-dom";
 import Head from "../Header/header";
 
+
+import { useCart } from "../Context/CartContext";
+
 const Accessories = () => {
+  const { addToCart } = useCart();
   const productsData=[
     {
       id: 5,
@@ -144,7 +148,7 @@ const Accessories = () => {
                     <p>{product.price}</p>
                   </div>
                   <div class="pro-item-Btn">
-                    <button>Add to Cart</button>
+                    <button onClick={() => addToCart(product)}>Add to Cart</button>
                   </div>
                 </div>
               ))}

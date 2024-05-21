@@ -1,10 +1,6 @@
 import Head from "../Header/header";
 import "./ProductLanding.css";
 import React, { useEffect, useState } from "react";
-import H11 from "../Images/Headphones/H11.webp";
-import H12 from "../Images/Headphones/H12.webp";
-import H13 from "../Images/Headphones/H13.webp";
-import H14 from "../Images/Headphones/H14.webp";
 import { Link } from "react-router-dom";
 import Foot from "../Footer/footer";
 import { ScrollRestoration } from "react-router-dom";
@@ -12,19 +8,24 @@ import { ScrollRestoration } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { items } from "../BrowseBy/Data";
 
+import { useCart } from "../Context/CartContext";
+
 const ProductLanding = () => {
   const [count, setCount] = useState(1);
 
   // for filter according to the product
   const [product, setProduct] = useState({});
   const { id } = useParams();
+  const [sideImg, setSideImg] = useState("");
 
   useEffect(() => {
     const filterProduct = items.filter((product) => product.id == id);
     // console.log(filterProduct)
+    setSideImg(filterProduct[0]?.img || "");
     setProduct(filterProduct[0]);
   }, [id]);
 
+  const { addToCart } = useCart();
   return (
     <>
       <Head />
@@ -37,24 +38,43 @@ const ProductLanding = () => {
           <div className="ProLand-1">
             <div className="ProLand-1-L">
               <div className="ProLand-sm-img">
-                <img src={product.img} alt="sm-img" />
-                <img src={product.img2} alt="sm-img" />
-                <img src={product.img3} alt="sm-img" />
-                <img src={product.img4} alt="sm-img" />
-                <img src={product.img5} alt="sm-img" />
-                {/* <img src={H15} alt="sm-img" /> */}
+                <img
+                  src={product.img}
+                  onMouseEnter={() => setSideImg(product.img)}
+                  alt="sm-img"
+                />
+                <img
+                  src={product.img2}
+                  onMouseEnter={() => setSideImg(product.img2)}
+                  alt="sm-img"
+                />
+                <img
+                  src={product.img3}
+                  onMouseEnter={() => setSideImg(product.img3)}
+                  alt="sm-img"
+                />
+                <img
+                  src={product.img4}
+                  onMouseEnter={() => setSideImg(product.img4)}
+                  alt="sm-img"
+                />
+                <img
+                  src={product.img5}
+                  onMouseEnter={() => setSideImg(product.img5)}
+                  alt="sm-img"
+                />
               </div>
               <div className="ProLand-img">
-                <img src={product.img} alt="ProLand-img" id="IDProLand-img" />
+                <img src={sideImg} alt="ProLand-img" id="IDProLand-img" />
+                {/* <img src={product.img} alt="ProLand-img" id="IDProLand-img" /> */}
               </div>
             </div>
             <div className="ProLand-1-R">
               <h1>{product.name}</h1>
               {/* <h1>JET GAMING HEADPHONE</h1> */}
-
               <h3>
                 {product.price}
-                <span>₹ 1,699.00</span>
+                {/* <span>₹ 1,699.00</span> */}
               </h3>
               <hr />
               <p>40mm Neodymium Drivers | 2 Mtr Braided Cable | Flexible Mic</p>
@@ -67,8 +87,10 @@ const ProductLanding = () => {
                 <button onClick={() => setCount((c) => c + 1)}>+</button>
               </div>
               <div className="btn-Add-Buy">
-                <Link to="./">
-                  <button>ADD TO CART</button>
+                <Link to="/AddToCart">
+                  <button onClick={() => addToCart(product)}>
+                    ADD TO CART
+                  </button>
                 </Link>
                 <Link to="./">
                   <button>BUY IT NOW</button>

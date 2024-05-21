@@ -138,7 +138,7 @@ function Head() {
                 </div>
               </Link>
             </li> */}
-            <li class="hideOnMobile">
+            {/* <li class="hideOnMobile">
               <Link to="./">
                 <div class="dropdown">
                   <button class="dropbtn">
@@ -146,18 +146,21 @@ function Head() {
                   </button>
                 </div>
               </Link>
-            </li>
+            </li> */}
             <li class="hideOnMobile">
-              <Link to="./">
+              <Link to="/AddToCart">
                 <div class="dropdown">
-                  <button
+                  <button class="dropbtn">
+                    <i class="ri-shopping-cart-line"></i>
+                  </button>
+                  {/* <button
                     class="dropbtn"
                     onClick={() => {
                       document.getElementById("Cart").style.display = "flex";
                     }}
                   >
                     <i class="ri-shopping-cart-line"></i>
-                  </button>
+                  </button> */}
                 </div>
               </Link>
             </li>
@@ -177,7 +180,7 @@ function Head() {
                     <i class="ri-more-2-fill"></i>
                   </button>
                   <div class="dropdown-content dropdown-content-last">
-                    <Link to="./">About Us</Link>
+                    {/* <Link to="./">About Us</Link> */}
                     <Link to="/Contact Us">Contact Us</Link>
                   </div>
                 </div>

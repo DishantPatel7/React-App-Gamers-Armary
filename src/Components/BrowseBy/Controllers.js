@@ -5,30 +5,21 @@ import X3 from "../Images/Controller/X3.jpg";
 import X4 from "../Images/Controller/X4.jpg";
 
 import Head from "../Header/header";
-import { Link,ScrollRestoration } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
+import { useCart } from "../Context/CartContext";
 const Controllers = () => {
+  const { addToCart } = useCart();
   const productsData = [
     {
+      id: 25,
       img: X1,
       name: "Ghost",
       price: "₹1299",
     },
-    {
-      img: X2,
-      name: "Raptor",
-      price: "₹5099",
-    },
-    {
-      img: X3,
-      name: "Fint",
-      price: "₹1199",
-    },
-    {
-      img: X4,
-      name: "Wave",
-      price: "₹2199",
-    },
+    { id: 26, img: X2, name: "Raptor", price: "₹5099" },
+    { id: 27, img: X3, name: "Fint", price: "₹1199" },
+    { id: 28, img: X4, name: "Wave", price: "₹2199" },
   ];
   return (
     <>
@@ -62,26 +53,28 @@ const Controllers = () => {
             <h1>Controllers</h1>
             {/* <p>26 Products</p> */}
             <div class="Products-items">
-              {productsData.map((test, index) => (
-                <div class="pro-item-Card" key={index}>
+              {productsData.map((product) => (
+                <div class="pro-item-Card" key={product.id}>
                   <div class="pro-item-Img">
-                    <Link to={test.url}>
-                      <img src={test.img} alt="img" />
+                    <Link to={`/product/${product.id}`}>
+                      <img src={product.img} alt="img" />
                     </Link>
                   </div>
                   <div class="pro-item-Text">
-                    <p>{test.name}</p>
-                    <p>{test.price}</p>
+                    <p>{product.name}</p>
+                    <p>{product.price}</p>
                   </div>
                   <div class="pro-item-Btn">
-                    <button>Add to Cart</button>
+                    <button onClick={() => addToCart(product)}>
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* <div className="Products-R"><Test/></div> */}
+          {/* <div className="Products-R"><product/></div> */}
         </div>
       </div>
       <ScrollRestoration />

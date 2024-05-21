@@ -1,10 +1,13 @@
 import "./container2.css";
 import b1 from "../Images/Best seller/b1.webp";
-import b2 from "../Images/Best seller/b2.webp";
-import b3 from "../Images/Best seller/b3.webp";
+// import b2 from "../Images/Best seller/b2.webp";
+import b2 from "../Images/Mouse/M1-kjkjk.png";
+import b3 from "../Images/Headphones/H1-bgremove-removebg-preview.png";
+// import b3 from "../Images/Best seller/b3.webp";
 import b4 from "../Images/Best seller/b4.webp";
 import b5 from "../Images/Best seller/b5.webp";
-import b6 from "../Images/Best seller/b6.webp";
+// import b6 from "../Images/Best seller/b6.webp";
+import b6 from "../Images/Controller/X4-bgremove.png";
 import b7 from "../Images/Best seller/b7.webp";
 
 // import React, { useRef, useState } from 'react';
@@ -24,17 +27,21 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+import { useCart } from "../Context/CartContext";
+
 function Cont2() {
+  const { addToCart } = useCart();
   let data = [
     {
-      id: 1,
+      id: 16,
       img: b1,
       name: "Mach Gaming Chair",
       price: "₹12000",
     },
     { id: 1, img: b2, name: "X-2 Wireless", price: "₹2500" },
     { id: 1, img: b3, name: "Headphone XD200", price: "₹2399" },
-    { id: 1, img: b4, name: "Sparun Mechanical keyboard", price: "₹2000" },
+    { id: 11, img: b4, name: "Sparun Mechanical keyboard", price: "₹2000" },
     { id: 26, img: b5, name: "Raptor", price: "₹5099" },
     { id: 28, img: b6, name: "Wave", price: "₹2199" },
     { id: 24, img: b7, name: "Wave Gen RX", price: "₹35049" },
@@ -44,7 +51,9 @@ function Cont2() {
       <div id="container2">
         <div class="cont-slider-text">
           <h1>BEST SELLERS</h1>
-          <button><Link to="/Best-Sellers">view all</Link></button>
+          <button>
+            <Link to="/Best-Sellers">view all</Link>
+          </button>
         </div>
         <div id="bestseller">
           <Swiper
@@ -97,7 +106,7 @@ function Cont2() {
                   <p>{test.price}</p>
                 </div>
                 <div class="cont2-btn">
-                  <button>Add to Cart</button>
+                  <button onClick={() => addToCart(test)}>Add to Cart</button>
                 </div>
               </SwiperSlide>
             ))}

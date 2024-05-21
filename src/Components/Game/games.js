@@ -17,28 +17,28 @@ function Games() {
   const gameset = [
     {
       id: 1,
-      imgS: g1,
+      img: g1,
       name: "Helldivers™",
     },
     {
       id: 2,
-      imgS: g2,
+      img: g2,
       name: "Rise of the Ronin",
     },
     {
       id: 3,
-      imgS: g9,
+      img: g9,
       name: "Call of Duty: Modern Warfare III",
     },
-    { id: 4, imgS: g3, name: "The Last of Us Part II Remastered" },
-    { id: 5, imgS: g4, name: "Tekken 8" },
-    { id: 6, imgS: g5, name: "EA SPORTS™ FC 24" },
-    { id: 7, imgS: g6, name: "Dragon's Dogma 2" },
-    { id: 8, imgS: g7, name: "Final Fantasy XVI" },
-    { id: 9, imgS: g8, name: "Marvel's Spider-Man 2" },
-    { id: 10, imgS: g10, name: "God of War Ragnarök" },
-    { id: 11, imgS: g11, name: "Final Fantasy VII Rebirth" },
-    { id: 12, imgS: g12, name: "LEGO Fortnite" },
+    { id: 4, img: g3, name: "The Last of Us Part II Remastered" },
+    { id: 5, img: g4, name: "Tekken 8" },
+    { id: 6, img: g5, name: "EA SPORTS™ FC 24" },
+    { id: 7, img: g6, name: "Dragon's Dogma 2" },
+    { id: 8, img: g7, name: "Final Fantasy XVI" },
+    { id: 9, img: g8, name: "Marvel's Spider-Man 2" },
+    { id: 10, img: g10, name: "God of War Ragnarök" },
+    { id: 11, img: g11, name: "Final Fantasy VII Rebirth" },
+    { id: 12, img: g12, name: "LEGO Fortnite" },
   ];
   return (
     <>
@@ -54,7 +54,7 @@ function Games() {
           {gameset.map((games) => (
             <div class="gs1" key={games.id}>
               <Link to={`/games/${games.id}`}>
-                <img src={games.imgS} alt="" /> <p>{games.name}</p>
+                <img src={games.img} alt="" /> <p>{games.name}</p>
               </Link>
             </div>
           ))}
