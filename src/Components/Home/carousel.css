@@ -57,6 +57,10 @@
   font-weight: 500;
   cursor: pointer;
 }
+.carousel .list .item .content button a {
+  text-decoration: none;
+  color: #000;
+}
 .carousel .list .item .content button:nth-child(2) {
   background-color: transparent;
   color: #eee;

@@ -13,31 +13,37 @@ import { Link } from "react-router-dom";
 function Carousel() {
   const item = [
     {
+      id: "/games/3",
       img: s1,
       topic: "COD : Modern Warfare III",
       des: "Call of Duty returns with an all-new campaign, modernized versions of classic Multiplayer maps and an open-world PvE Zombies experience.",
     },
     {
+      id: "/games/9",
       img: s8,
       topic: "Marvel's Spider-Man 2",
       des: "Spider-Men, Peter Parker and Miles Morales, return for an exciting new adventure in the critically acclaimed Marvel’sSpider-Man franchise for PS5.",
     },
     {
+      id: "/games/2",
       img: s3,
       topic: "Rise of the Ronin",
       des: "Embark on an epic journey across war-torn 19th-century Japan in this combat-focused open-world action RPG from Team NINJA, the veteran studio behind Nioh and NINJA GAIDEN.",
     },
     {
+      id: "/games/5",
       img: s4,
       topic: "Tekken 8",
       des: "Tekken 8 picks up after the gruesome battle that ended in Heihachi Mishima’s defeat in Tekken 7, focusing on a new rivalry, pitting father against son as Jin Kazama stands in defiance against Kazuya Mishima in a city-shattering face-to-face showdown.",
     },
     {
+      id: "/games/1",
       img: s5,
       topic: "Helldivers™ 2",
       des: "Helldivers 2 features Arrowhead's best cooperative gameplay yet. Collaboration will be vital: Teams will synergize on loadouts, strategize their approach for each mission and complete objectives together.1",
     },
     {
+      id: "/games/6",
       img: s6,
       topic: "EA SPORTS™ FC 24",
       des: "EA SPORTS FC™ 24 marks the beginning of the future of football. Built on innovation and authenticity, feel closer to the game in the most true-to-football experience yet with the best players from the biggest clubs, leagues and competitions around the globe.",
@@ -57,8 +63,10 @@ function Carousel() {
                 <div class="topic">{item.topic}</div>
                 <div class="des">{item.des}</div>
                 <div class="buttons">
-                  <button>BUY NOW</button>
-                  <button>ADD TO CART</button>
+                  <button>
+                    <Link to={item.id}>BUY NOW</Link>
+                  </button>
+                  {/* <button>ADD TO CART</button> */}
                 </div>
               </div>
             </div>

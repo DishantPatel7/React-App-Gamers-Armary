@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   padding: 5vh 5vw;
-  height: 100vh;
+  height:auto;
   background: #1b1919;
   color: #eee;
 }
